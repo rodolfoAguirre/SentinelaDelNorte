@@ -1,5 +1,5 @@
-# Configura la compilacion del motor
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: configura la compilacion del motor
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 cmake_minimum_required(VERSION 3.16)
@@ -30,6 +30,7 @@ enable_testing()
 find_package(Python3 COMPONENTS Interpreter QUIET)
 if(Python3_FOUND)
 	add_test(NAME engine COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_engine.py $<TARGET_FILE:sentinela>)
+	add_test(NAME autograder COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_autograder.py $<TARGET_FILE:sentinela>)
 	if(Python3_VERSION VERSION_GREATER_EQUAL "3.10")
 		add_test(NAME adapter COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_adapter.py $<TARGET_FILE:sentinela>)
 	endif()

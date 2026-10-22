@@ -1,16 +1,18 @@
 # Descripcion: verifica diferencias entre el contrato web y el local
-# Autores: pendientes | Matriculas: pendientes
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 import json
+import os
 from pathlib import Path
 import random
 import subprocess
+import sys
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXE = ROOT / "build/sentinela.exe"
+EXE = Path(sys.argv.pop(1)).resolve() if len(sys.argv) > 1 else (ROOT / ("build/sentinela.exe" if os.name == "nt" else "build/sentinela"))
 
 
 # Ejecuta una solicitud bajo el contrato web

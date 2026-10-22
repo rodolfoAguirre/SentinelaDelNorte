@@ -1,6 +1,6 @@
-// Adapta datos y resultados del motor
-// Autores: pendientes | Matriculas: pendientes
-// Modificacion: 2026-10-21
+// Descripcion: adapta datos y resultados del motor
+// Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
+// Modificacion: 2026-10-22
 
 #pragma once
 
@@ -150,7 +150,9 @@ inline Json runMst(const Json &input, Timing &time) {
 	// Ejecuta el calculo sobre los datos preparados
 	// Parametros: ninguno; usa los datos capturados
 	// Retorno: resultado del algoritmo
-	auto result = time.run([&] { return engine::kruskal(network); });
+	auto result = time.run([&] {
+		return engine::kruskal(network);
+	});
 	return JsonObject{{"connected", result.connected},
 	                  {"components", result.components},
 	                  {"edge_indices", integerArray(result.edges)},
@@ -175,7 +177,9 @@ inline Json runTsp(const Json &input, Timing &time) {
 	// Ejecuta el calculo sobre los datos preparados
 	// Parametros: ninguno; usa los datos capturados
 	// Retorno: resultado del algoritmo
-	auto result = time.run([&] { return engine::tsp(network, selected, limit, passes); });
+	auto result = time.run([&] {
+		return engine::tsp(network, selected, limit, passes);
+	});
 	return JsonObject{{"tour", integerArray(result.order)},
 	                  {"physical_nodes", integerArray(result.physicalNodes)},
 	                  {"physical_edge_indices", integerArray(result.physicalEdges)},
@@ -197,7 +201,9 @@ inline Json runFlow(const Json &input, Timing &time) {
 	// Ejecuta el calculo sobre los datos preparados
 	// Parametros: ninguno; usa los datos capturados
 	// Retorno: resultado del algoritmo
-	auto result = time.run([&] { return engine::dinic(network, source, sink, directed); });
+	auto result = time.run([&] {
+		return engine::dinic(network, source, sink, directed);
+	});
 	JsonArray flows{};
 	for (int index = 0; index < int(result.edgeFlow.size()); ++index) {
 		flows.emplace_back(JsonObject{{"edge_index", index}, {"flow", result.edgeFlow[index]}});
@@ -233,7 +239,9 @@ inline Json runVoronoi(const Json &input, Timing &time) {
 	// Ejecuta el calculo sobre los datos preparados
 	// Parametros: ninguno; usa los datos capturados
 	// Retorno: resultado del algoritmo
-	auto result = time.run([&] { return engine::voronoi(sites, box, queries); });
+	auto result = time.run([&] {
+		return engine::voronoi(sites, box, queries);
+	});
 	JsonArray cells{};
 	for (const auto &polygon : result.cells) {
 		JsonArray vertices{};
@@ -313,8 +321,9 @@ inline Json runStrings(const Json &input, Timing &time, const std::string &mode)
 		// Busca el fragmento compartido sin incluir conversiones
 		// Parametros: ninguno; usa las transmisiones capturadas
 		// Retorno: intervalos de la subcadena comun
-		auto common =
-		    time.run([&] { return engine::longestCommon(transmissions[0], transmissions[1]); });
+		auto common = time.run([&] {
+			return engine::longestCommon(transmissions[0], transmissions[1]);
+		});
 
 		output["common"] = commonResult(common);
 	}

@@ -1,5 +1,5 @@
-# Conecta Python con el motor C++ mediante JSON
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: conecta Python con el motor C++ mediante JSON
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 from __future__ import annotations

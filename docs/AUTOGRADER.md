@@ -11,7 +11,7 @@ El ZIP activa el contrato de la [página Sentinela](https://wagon-wages-83948178
 
 Si se deja vacía la semilla, la página genera una y la registra en el reporte. La semilla controla los casos; no se proporciona al ejecutable C++.
 
-La primera ejecución descarga el compilador del sitio. Se suben los fuentes en ZIP, no el ejecutable ni la app Python. Autores y matrículas siguen pendientes. Para una entrega formal, completa `team.txt` y genera el paquete con `--student-id TU_MATRICULA`.
+La primera ejecución descarga el compilador del sitio. Se suben los fuentes en ZIP, no el ejecutable ni la app Python. Para la entrega formal genera el paquete con `--student-id` y la matrícula de un integrante.
 
 ## Contrato de la página
 

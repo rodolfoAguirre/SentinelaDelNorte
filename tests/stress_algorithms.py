@@ -1,9 +1,10 @@
 # Descripcion: prueba siete algoritmos con cargas aleatorias crecientes
-# Autores: pendientes | Matriculas: pendientes
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-22
 
 import json
 import math
+import os
 from pathlib import Path
 import random
 import subprocess
@@ -12,7 +13,7 @@ import time
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "build/sentinela.exe"
+EXE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else (ROOT / ("build/sentinela.exe" if os.name == "nt" else "build/sentinela"))
 SEED = 20261022
 
 
@@ -153,7 +154,7 @@ def main():
 		stressScale(label, size, generator, records)
 		print(f"[OK] {label}: nodos={size}")
 
-	report = {"seed": SEED, "executable": str(EXE), "success": True, "records": records}
+	report = {"seed": SEED, "executable": EXE.name, "success": True, "records": records}
 	output = ROOT / "results/stress_tests.json"
 	output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 	print(f"Prueba completada: {len(records)} ejecuciones; resultados en {output}")

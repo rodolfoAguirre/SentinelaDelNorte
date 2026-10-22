@@ -1,5 +1,5 @@
-# Prepara un ZIP de fuentes para probar el autograder
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: prepara un ZIP de fuentes para probar el autograder
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 import argparse
@@ -77,7 +77,7 @@ def buildPackage(studentId):
 				raise ValueError(f"La copia de {sourcePath.name} no coincide con el original")
 
 	report = {
-		"archive": str(archivePath),
+		"archive": archivePath.relative_to(ROOT).as_posix(),
 		"sha256": hashlib.sha256(archivePath.read_bytes()).hexdigest(),
 		"bytes": archivePath.stat().st_size,
 		"files": len(entries),
@@ -87,7 +87,7 @@ def buildPackage(studentId):
 		"webContractVersion": "1.1.0-web",
 		"entryPointDefine": "SENTINELA_AUTOGRADER",
 		"studentIdPending": studentId == DEFAULT_STUDENT_ID,
-		"teamFile": "team.txt; autores y matriculas pendientes",
+		"teamFile": "team.txt",
 	}
 
 	return archivePath, report

@@ -1,5 +1,5 @@
-# Valida el motor con referencias independientes
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: valida el motor con referencias independientes
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 """Valida el motor con referencias independientes"""
@@ -7,6 +7,7 @@ import itertools
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import random
 import subprocess
@@ -15,7 +16,7 @@ import time
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-EXE = Path(sys.argv.pop(1)).resolve() if len(sys.argv) > 1 else ROOT / 'build/sentinela.exe'
+EXE = Path(sys.argv.pop(1)).resolve() if len(sys.argv) > 1 else (ROOT / ("build/sentinela.exe" if os.name == "nt" else "build/sentinela"))
 
 engineCalls = 0
 
@@ -332,7 +333,7 @@ if __name__ == '__main__':
 	report = dict(success=result.wasSuccessful(), test_groups=result.testsRun,
 		engine_calls=engineCalls, failures=len(result.failures), errors=len(result.errors),
 		elapsed_seconds=time.perf_counter() - started, seeds=[2038, 2039,
-		2040, 2041, 2042], executable=str(EXE), executable_sha256=hashlib.sha256(EXE.read_bytes()).hexdigest(),
+		2040, 2041, 2042], executable=EXE.name, executable_sha256=hashlib.sha256(EXE.read_bytes()).hexdigest(),
 		references=['naive string enumeration', 'Prim', 'TSP permutations + Floyd-Warshall',
 		'all s-t cuts', 'Voronoi half-plane/area/nearest properties'])
 	(ROOT / 'results').mkdir(exist_ok=True)

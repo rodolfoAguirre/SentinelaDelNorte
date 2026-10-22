@@ -1,5 +1,5 @@
-# Resume las mediciones registradas
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: resume las mediciones registradas
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 import json

@@ -8,7 +8,7 @@ Se revisaron las dos páginas de `Estandar Programacion.pdf` proporcionado por e
 - Nombres descriptivos para grafos, distancias, estados, flujos y posiciones
 - Tabulaciones de cuatro columnas, llaves en la misma línea y una instrucción por línea
 - Líneas en blanco entre funciones, validaciones, recorridos y resultados
-- Encabezados con descripción, autores y matrículas pendientes, y fecha de modificación
+- Encabezados con descripción, autores, matrículas y fecha de modificación
 - Documentación de propósito, parámetros y retorno antes de cada función
 - Inicialización de campos y buffers; contenedores inicializados por constructor o con llaves
 - Ciclos sin `break` ni `continue`, usando condiciones y bloques equivalentes
