@@ -1,5 +1,5 @@
-# Genera ejemplos con resultados reales
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: genera ejemplos con resultados reales
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 """Genera ejemplos con resultados reales"""

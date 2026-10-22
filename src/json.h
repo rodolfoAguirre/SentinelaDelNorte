@@ -1,6 +1,6 @@
-// Lee y escribe el contrato JSON
-// Autores: pendientes | Matriculas: pendientes
-// Modificacion: 2026-10-21
+// Descripcion: lee y escribe el contrato JSON
+// Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
+// Modificacion: 2026-10-22
 
 #pragma once
 
@@ -187,7 +187,7 @@ class Parser {
 	// Retorno: codigo Unicode de 16 bits
 	unsigned readHexCode() {
 		unsigned numericValue = 0;
-		for (int i = 0; i < 4; ++i) {
+		for (int digitIndex = 0; digitIndex < 4; ++digitIndex) {
 			if (position == sourceText.size()) {
 				fail();
 			}
@@ -446,14 +446,14 @@ class Parser {
 	// Parametros: ninguno
 	// Retorno: valor JSON sin contenido adicional
 	Json run() {
-		Json j = parse(0);
+		Json document = parse(0);
 
 		skipWhitespace();
 		if (position != sourceText.size()) {
 			fail();
 		}
 
-		return j;
+		return document;
 	}
 };
 

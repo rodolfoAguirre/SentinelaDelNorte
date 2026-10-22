@@ -1,5 +1,5 @@
 # Descripcion: inicia la interfaz Streamlit desde cualquier carpeta
-# Autores: pendientes | Matriculas: pendientes
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-22
 
 from pathlib import Path
