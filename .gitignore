@@ -4,4 +4,5 @@ cmake-build-*/
 tmp/
 __pycache__/
 .venv/
+.venv-deps/
 dist/

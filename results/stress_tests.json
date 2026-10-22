@@ -1,0 +1,109 @@
+{
+  "seed": 20261022,
+  "executable": "C:\\Users\\Rodolfo Aguirre\\Cosas de rery\\Tec\\Quinto Semestre\\Algoritmos Avanzados\\Midterm\\build\\sentinela.exe",
+  "success": true,
+  "records": [
+    {
+      "scale": "pequena",
+      "mode": "mst",
+      "size": 12,
+      "edges": 22,
+      "seconds": 0.06538700000055542
+    },
+    {
+      "scale": "pequena",
+      "mode": "tsp",
+      "size": 8,
+      "edges": 8,
+      "exact": true,
+      "seconds": 0.056028900000455906
+    },
+    {
+      "scale": "pequena",
+      "mode": "max_flow",
+      "size": 12,
+      "edges": 22,
+      "seconds": 0.05717220000042289
+    },
+    {
+      "scale": "pequena",
+      "mode": "voronoi",
+      "size": 12,
+      "seconds": 0.05933560000084981
+    },
+    {
+      "scale": "pequena",
+      "mode": "strings",
+      "size": 80,
+      "seconds": 0.06002319999970496
+    },
+    {
+      "scale": "mediana",
+      "mode": "mst",
+      "size": 120,
+      "edges": 609,
+      "seconds": 0.08466370000132883
+    },
+    {
+      "scale": "mediana",
+      "mode": "tsp",
+      "size": 60,
+      "edges": 262,
+      "exact": false,
+      "seconds": 0.07084519999989425
+    },
+    {
+      "scale": "mediana",
+      "mode": "max_flow",
+      "size": 120,
+      "edges": 609,
+      "seconds": 0.06191489999946498
+    },
+    {
+      "scale": "mediana",
+      "mode": "voronoi",
+      "size": 120,
+      "seconds": 0.07700819999990927
+    },
+    {
+      "scale": "mediana",
+      "mode": "strings",
+      "size": 24000,
+      "seconds": 0.06417040000087582
+    },
+    {
+      "scale": "grande",
+      "mode": "mst",
+      "size": 600,
+      "edges": 2975,
+      "seconds": 0.06775150000066787
+    },
+    {
+      "scale": "grande",
+      "mode": "tsp",
+      "size": 300,
+      "edges": 5583,
+      "exact": false,
+      "seconds": 0.10841009999967355
+    },
+    {
+      "scale": "grande",
+      "mode": "max_flow",
+      "size": 600,
+      "edges": 2975,
+      "seconds": 0.07401159999972151
+    },
+    {
+      "scale": "grande",
+      "mode": "voronoi",
+      "size": 300,
+      "seconds": 0.07464209999852756
+    },
+    {
+      "scale": "grande",
+      "mode": "strings",
+      "size": 120000,
+      "seconds": 0.08993989999908081
+    }
+  ]
+}

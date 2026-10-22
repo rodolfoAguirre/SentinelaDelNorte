@@ -14,10 +14,10 @@ El cálculo se realiza en **C++17**. Un adaptador en **Python** permite consumir
 | Ejemplos y prueba sencilla desde Python | Disponibles |
 | Preparación de datos GÉANT | Implementada, con supuestos documentados |
 | Integración con el autograder web | **100 puntos obtenidos**, según la corrida confirmada por el equipo |
-| Pantallas y visualizaciones de Streamlit | Pendientes |
+| Pantallas y visualizaciones de Streamlit | Primera versión implementada |
 | Instalador y distribución de la app | Pendientes |
 
-Actualmente puedes ejecutar todos los algoritmos desde Python o la terminal. **Todavía no existe una interfaz gráfica ejecutable de Streamlit.** El archivo `app/streamlit_app.py` mencionado en la guía de integración es una propuesta para construirla, no un archivo ya implementado.
+La interfaz está implementada en `app/streamlit_app.py`: ejecuta los siete algoritmos, presenta resultados, diagramas, tablas y métricas, y permite descargar cada ejecución en JSON. También puedes utilizar Python o la terminal.
 
 El resultado del autograder corresponde al contrato de ese evaluador. La interfaz completa y el funcionamiento en otros sistemas operativos requieren sus propias pruebas.
 
@@ -50,7 +50,7 @@ Si la red está desconectada, MST devuelve un bosque e informa que no todos los 
 Usuario
   |
   v
-Interfaz Streamlit                  Pendiente
+Interfaz Streamlit                  Implementada
   |
   v
 Adaptador Python: app/adapter.py     Implementado
@@ -298,9 +298,10 @@ python prueba_algoritmos.py
 python tests/test_engine.py build/sentinela.exe
 python tests/test_adapter.py build/sentinela.exe
 python tests/test_autograder.py
+python tests/stress_algorithms.py
 ```
 
-La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `test_autograder.py` utiliza actualmente `build/sentinela.exe`; para otro sistema debe ajustarse esa ruta de prueba.
+La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `stress_algorithms.py` genera casos aleatorios reproducibles en tres escalas para los siete algoritmos y guarda sus mediciones en `results/stress_tests.json`. `test_autograder.py` y `stress_algorithms.py` utilizan actualmente `build/sentinela.exe`; para otro sistema se puede pasar la ruta del ejecutable como argumento.
 
 CMake registra las suites del motor y del adaptador si encuentra una versión adecuada de Python:
 
@@ -319,7 +320,7 @@ Los resultados y sus límites de interpretación están en [results/README.md](r
 
 ## Construir la interfaz Streamlit
 
-El trabajo pendiente consiste en crear formularios para introducir o cargar datos, llamar al adaptador y presentar los resultados con mensajes de error claros.
+La interfaz incluye escenarios GÉANT para MST, TSP, flujo y Voronoi, así como análisis de transmisiones de ejemplo o archivos TXT cargados. Selecciona un análisis en la barra lateral y pulsa **Ejecutar análisis**. Cada resultado conserva su entrada: vuelve a ejecutar al cambiar parámetros.
 
 Para preparar un entorno Python separado:
 
@@ -330,13 +331,17 @@ python -m venv .venv
 
 En Linux/macOS utiliza `.venv/bin/python`. La instalación de dependencias no crea ni abre la interfaz.
 
-La [guía para el desarrollador de la app](app/README.md) contiene un ejemplo que puede convertirse en `app/streamlit_app.py`. **Una vez que ese archivo se implemente**, se podrá iniciar desde la raíz con:
+Inicia la interfaz desde la raíz con:
 
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run app/streamlit_app.py
 ```
 
-La interfaz deberá conservar resultados entre interacciones, ejecutar el motor al enviar formularios, capturar `EngineError` y mostrar si una solución TSP es exacta o heurística. Después habrá que probar el recorrido completo desde el navegador y preparar su distribución.
+También puedes ejecutar `python iniciar_app.py` con el Python donde instalaste las dependencias. El lanzador localiza la app respecto al proyecto y admite la carpeta local de dependencias `.venv-deps` si está disponible.
+
+El lanzador muestra la dirección exacta, normalmente `http://127.0.0.1:8501`, y usa el siguiente puerto disponible hasta 8510 si está ocupado. Abre esa dirección y conserva la terminal abierta. Desactiva explícitamente el modo de desarrollo de Streamlit para evitar enlaces al puerto 3000 sin un servidor de interfaz.
+
+La interfaz conserva resultados entre interacciones, captura `EngineError` y distingue TSP exacto de heurístico. Presenta tiempo del algoritmo C++, tiempo total de la llamada y pico de memoria del proceso, con unidades y alcance de cada medición. La distribución en otras computadoras sigue pendiente.
 
 ## Problemas frecuentes
 
@@ -351,7 +356,7 @@ La interfaz deberá conservar resultados entre interacciones, ejecutar el motor 
 | El motor rechaza una transmisión | Revisa mayúsculas, caracteres permitidos, BOM y límites de tamaño |
 | La solicitud supera el tiempo máximo | Revisa el tamaño del caso; el adaptador usa 30 segundos por defecto y permite configurarlo |
 | La respuesta del autograder no tiene `result` | Es otro contrato; utiliza el ejecutable local normal para la app |
-| Streamlit no encuentra `app/streamlit_app.py` | La pantalla aún debe implementarse |
+| Streamlit no encuentra `app/streamlit_app.py` | Ejecuta el comando desde la raíz del proyecto |
 
 ## Estructura del repositorio
 
@@ -398,7 +403,7 @@ Para preparar la exposición y practicar preguntas técnicas, consulta la [guía
 
 ## Pendientes del equipo
 
-- Implementar las pantallas y visualizaciones de Streamlit
+- Ampliar los escenarios y las opciones de visualización de Streamlit
 - Probar la app completa y su instalación en otra computadora
 - Incorporar las transmisiones, firmas y escenarios oficiales cuando estén disponibles
 - Completar autores y matrículas en `team.txt` y los encabezados

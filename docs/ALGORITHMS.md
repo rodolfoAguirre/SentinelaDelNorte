@@ -8,6 +8,20 @@ Un único `main.cpp` enlaza headers C++17. Las funciones del namespace `engine` 
 
 Las funciones de grafos validan sus estructuras. Las funciones de cadenas reciben secuencias hexadecimales previamente normalizadas; `normalizeHex` es la frontera de validación. El grafo distingue `cost`, `distance` y `capacity` en el adaptador, aunque el algoritmo reutiliza `Edge.weight`. Los índices de enlace siempre apuntan a la lista de entrada, por lo que se distinguen enlaces paralelos. Las demandas permanecen separadas y no participan en el flujo máximo s-t.
 
+## Archivo de cada algoritmo
+
+| Algoritmo | Archivo `.h` | Funcion principal |
+|---|---|---|
+| Arbol de expansion minima (Kruskal) | `src/network.h` | `engine::kruskal` |
+| Ruta de centrales (TSP): Held-Karp y vecino mas cercano con 2-opt | `src/network.h` | `engine::tsp`, `engine::heldKarp`, `engine::heuristicTour` |
+| Flujo maximo (Dinic) | `src/network.h` | `engine::dinic` |
+| Regiones de Voronoi | `src/geometry.h` | `engine::voronoi` |
+| Busqueda de firmas (KMP) | `src/strings.h` | `engine::kmp` |
+| Palindromo mas largo (Manacher) | `src/strings.h` | `engine::manacher` |
+| Subcadena comun mas larga (automata de sufijos) | `src/strings.h` | `engine::longestCommon` |
+
+Las funciones de `src/protocol.h` preparan datos y respuestas para el programa, pero las implementaciones algorítmicas están en los encabezados de la tabla.
+
 ## 1. Árbol de expansión mínima
 
 **Problema:** seleccionar enlaces físicos no dirigidos que conecten todos los vértices minimizando la suma de costos, sin ciclos. Para componentes desconectadas no existe árbol global: devolver bosque mínimo y señal explícita.

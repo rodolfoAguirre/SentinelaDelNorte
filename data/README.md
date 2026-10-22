@@ -1,7 +1,5 @@
 # Trazabilidad de los datos de trabajo
 
-El XML y mapping se inspeccionaron antes de implementar. El PDF suministrado permanece en `../sentinelaDelNorte.pdf`: es una exportación de 20 páginas con texto rasterizado, leída mediante extracción de sus imágenes. Sus páginas 5–7 describen algoritmos, 11 incluye el ejemplo de cadenas, 12–14 los datos y formatos, 15 experimentos, 17 el sobre JSON y 19 la estructura.
-
 ## Originales
 
 `original/geant.xml` y `original/mapping.csv` son copias byte por byte de los archivos suministrados, con SHA-256 en `derived/inspection.json`. No se editan sus valores. El XML usa namespace `http://sndlib.zib.de/network`, codificación ISO-8859-1 y coordenadas `geographical`: x=longitud, y=latitud en grados.

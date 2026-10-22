@@ -1,6 +1,6 @@
 # Consumir el motor desde Streamlit
 
-Esta guía es para quien construirá la interfaz. **El adaptador ya está implementado en `app/adapter.py`; las pantallas todavía están pendientes.** El backend de cálculo es el ejecutable C++ `sentinela`, consumido mediante funciones Python.
+La primera interfaz está implementada en `app/streamlit_app.py` y consume el motor C++ mediante `app/adapter.py`. Incluye los siete algoritmos y un análisis conjunto de cadenas, resultados, diagramas, tablas, tiempo C++, tiempo total, memoria y descarga JSON. Instala `app/requirements.txt` y ejecuta `python -m streamlit run app/streamlit_app.py` desde la raíz.
 
 ```text
 Widgets de Streamlit
@@ -204,7 +204,7 @@ Para archivos ya presentes en el servidor se acepta `{"file":"data/synthetic/tra
 
 ## 6. Ejemplo mínimo para la futura pantalla
 
-Tu compañero puede copiar este código a `app/streamlit_app.py` al comenzar la interfaz. **Ese archivo todavía no existe como app implementada**; este es un ejemplo de consumo para extender:
+La interfaz actual está en `app/streamlit_app.py`. Este fragmento reducido sirve como ejemplo de integración para desarrollar otras pantallas:
 
 ```python
 import streamlit as st
@@ -294,12 +294,12 @@ ctest --test-dir build -R adapter --output-on-failure
 
 Si el test no está registrado, vuelve a configurar CMake con Python >=3.10; se puede seleccionar con `-DPython3_EXECUTABLE=C:/ruta/python.exe`. En Linux/macOS usa `build/sentinela`. La evidencia se guarda en `results/adapter_tests.json`.
 
-Las 14 pruebas cubren los ocho modos con el motor real, rutas desde otra carpeta, archivos subidos, errores de C++, recuperación y configuración. Los timeouts y fallos de proceso/protocolo se simulan para reproducirlos. Se ha probado el adaptador en Windows/MinGW; la pantalla Streamlit del ejemplo aún debe implementarse y comprobarse en navegador.
+Las 14 pruebas cubren los ocho modos con el motor real, rutas desde otra carpeta, archivos subidos, errores de C++, recuperación y configuración. Los timeouts y fallos de proceso/protocolo se simulan para reproducirlos. La interfaz se verifica adicionalmente con `python tests/test_interface.py`, que recorre sus ocho vistas usando Streamlit AppTest y el motor real, comprueba métricas y el manejo de un origen igual al destino.
 
 Para Windows/MinGW conserva juntos `sentinela.exe`, `libstdc++-6.dll`, `libgcc_s_seh-1.dll` y `libwinpthread-1.dll`. CMake copia las DLL junto al binario. Incluye también `app/`, los datos y los ejemplos que use la interfaz. Para otro sistema hay que compilar el motor en ese entorno y configurar el ejecutable correspondiente.
 
 ## 9. Qué sigue pendiente
 
-El siguiente trabajo es construir widgets, seleccionar datos, llamar al adaptador y dibujar `result`. Ya están disponibles los algoritmos y el transporte; faltan las pantallas, visualizaciones, prueba completa en navegador y distribución de la app.
+La primera versión incluye formularios, selección de centrales y extremos de flujo, carga de transmisiones, diagramas, tablas y métricas. Queda ampliar escenarios oficiales, validar distribución en otras computadoras y refinar las visualizaciones.
 
 Siguen pendientes transmisiones, firmas, escenarios y contrato oficial. Los datos derivados contienen supuestos identificados en [data/README.md](../data/README.md). Si cambia el contrato, adapta `src/protocol.h`, `app/adapter.py` y sus pruebas. `CONTRACT_VERSION` detecta respuestas de versiones incompatibles.
