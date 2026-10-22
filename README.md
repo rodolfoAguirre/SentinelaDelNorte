@@ -95,6 +95,8 @@ Las carpetas `build/`, `cmake-build-*/`, `.venv/`, `tmp/` y `dist/` están exclu
 
 ### 2. Compilar el motor
 
+En Linux o macOS basta con `cmake -S . -B build -DCMAKE_BUILD_TYPE=Release` y `cmake --build build`; el ejecutable queda en `build/sentinela`. Sin CMake también funciona `g++ -std=c++17 -O2 src/main.cpp -o build/sentinela`.
+
 Con CMake, Ninja y MinGW disponibles en `PATH`:
 
 ```powershell
@@ -266,7 +268,7 @@ Para regenerar el paquete de evaluación:
 python tools/package_autograder.py
 ```
 
-Genera `dist/A0XXXXXX_SENTINEL_DEL_NORTE.zip`. Autores y matrículas permanecen pendientes; para una entrega identificada, completa `team.txt` y usa `--student-id TU_MATRICULA`. Las instrucciones completas están en [AUTOGRADER.md](docs/AUTOGRADER.md).
+Genera `dist/A0XXXXXX_SENTINEL_DEL_NORTE.zip`. Para la entrega identificada usa `--student-id` con la matrícula de un integrante, por ejemplo `--student-id A00840242`. Las instrucciones completas están en [AUTOGRADER.md](docs/AUTOGRADER.md).
 
 ## Datos incluidos
 
@@ -301,7 +303,7 @@ python tests/test_autograder.py
 python tests/stress_algorithms.py
 ```
 
-La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `stress_algorithms.py` genera casos aleatorios reproducibles en tres escalas para los siete algoritmos y guarda sus mediciones en `results/stress_tests.json`. `test_autograder.py` y `stress_algorithms.py` utilizan actualmente `build/sentinela.exe`; para otro sistema se puede pasar la ruta del ejecutable como argumento.
+La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `stress_algorithms.py` genera casos aleatorios reproducibles en tres escalas para los siete algoritmos y guarda sus mediciones en `results/stress_tests.json`. Todas las suites buscan `build/sentinela.exe` en Windows y `build/sentinela` en Linux o macOS; también aceptan la ruta del ejecutable como primer argumento.
 
 CMake registra las suites del motor y del adaptador si encuentra una versión adecuada de Python:
 
@@ -365,7 +367,7 @@ Sentinela del Norte/
 ├── README.md                  Guía general del proyecto
 ├── CMakeLists.txt             Configuración de compilación C++
 ├── prueba_algoritmos.py       Prueba sencilla de los siete algoritmos
-├── team.txt                   Autores y matrículas pendientes
+├── team.txt                   Integrantes y matrículas
 ├── src/
 │   ├── main.cpp               Entrada y salida del proceso
 │   ├── network.h              MST, TSP y flujo máximo

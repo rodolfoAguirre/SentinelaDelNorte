@@ -1,5 +1,5 @@
-# Verifica la integracion Python con el motor C++
-# Autores: pendientes | Matriculas: pendientes
+# Descripcion: verifica la integracion Python con el motor C++
+# Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-21
 
 import copy
@@ -16,7 +16,7 @@ from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXE = Path(sys.argv.pop(1)).resolve() if len(sys.argv) > 1 else ROOT / "build/sentinela.exe"
+EXE = Path(sys.argv.pop(1)).resolve() if len(sys.argv) > 1 else (ROOT / ("build/sentinela.exe" if os.name == "nt" else "build/sentinela"))
 sys.path.insert(0, str(ROOT))
 
 from app import EngineAdapter, EngineError, hexFromBytes
@@ -305,7 +305,7 @@ if __name__ == "__main__":
 		"failures": len(result.failures),
 		"errors": len(result.errors),
 		"elapsedSeconds": time.perf_counter() - started,
-		"executable": str(EXE),
+		"executable": EXE.name,
 		"executableSha256": hashlib.sha256(EXE.read_bytes()).hexdigest(),
 		"adapterSha256": hashlib.sha256((ROOT / "app/adapter.py").read_bytes()).hexdigest(),
 		"coverage": [
