@@ -1,0 +1,51 @@
+{
+  "counts": {
+    "nodes": 22,
+    "edges": 36,
+    "demands": 462
+  },
+  "xml_meta": {
+    "granularity": "4month",
+    "time": "2005",
+    "unit": "MBITPERSEC",
+    "origin": "Steve Uhlig, http://totem.info.ucl.ac.be/dataset.html, scaled directed peak matrix, period:4 month, total demand 3Tbps"
+  },
+  "original_sha256": {
+    "geant.xml": "a1f0d42abb70481bc2e31e77453a1de43bd71513515824a5daefb0529c480034",
+    "mapping.csv": "ce5fdb01a1b3b02104abb2c07a310225094da89f8b406f678c554805c287d12b"
+  },
+  "mapping": [
+    {
+      "transmission": "transmission1.txt",
+      "link": "Austria – Suiza",
+      "scenario": "Tráfico benigno",
+      "status": "pending",
+      "node_indices": [
+        0,
+        2
+      ],
+      "matching_links": [
+        "at1.at_ch1.ch"
+      ],
+      "topology_match": true,
+      "transmission_available": false
+    },
+    {
+      "transmission": "transmission2.txt",
+      "link": "Austria – Alemania",
+      "scenario": "Tráfico DDoS",
+      "status": "pending",
+      "node_indices": [
+        0,
+        4
+      ],
+      "matching_links": [
+        "at1.at_de1.de"
+      ],
+      "topology_match": true,
+      "transmission_available": false
+    }
+  ],
+  "installed_capacity_present": false,
+  "note": "No discrepancies in supplied mappings"
+}

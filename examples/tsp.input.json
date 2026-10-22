@@ -1,0 +1,28 @@
+{
+  "mode": "tsp",
+  "input": {
+    "n": 3,
+    "edges": [
+      {
+        "u": 0,
+        "v": 1,
+        "distance": 2
+      },
+      {
+        "u": 1,
+        "v": 2,
+        "distance": 3
+      },
+      {
+        "u": 0,
+        "v": 2,
+        "distance": 9
+      }
+    ],
+    "selected": [
+      0,
+      1,
+      2
+    ]
+  }
+}

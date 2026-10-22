@@ -1,0 +1,36 @@
+# Configura la compilacion del motor
+# Autores: pendientes | Matriculas: pendientes
+# Modificacion: 2026-10-21
+
+cmake_minimum_required(VERSION 3.16)
+project(SentinelaDelNorte LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+add_executable(sentinela src/main.cpp)
+if(WIN32)
+	target_link_libraries(sentinela PRIVATE psapi)
+endif()
+if(MSVC)
+	target_compile_options(sentinela PRIVATE /W4)
+else()
+	target_compile_options(sentinela PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+if(MINGW)
+	# Copia el runtime para ejecutar fuera del IDE
+	get_filename_component(MINGW_BIN "${CMAKE_CXX_COMPILER}" DIRECTORY)
+	foreach(DLL libstdc++-6.dll libgcc_s_seh-1.dll libwinpthread-1.dll)
+		if(EXISTS "${MINGW_BIN}/${DLL}")
+			add_custom_command(TARGET sentinela POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_if_different
+				"${MINGW_BIN}/${DLL}" "$<TARGET_FILE_DIR:sentinela>/${DLL}")
+		endif()
+	endforeach()
+endif()
+enable_testing()
+find_package(Python3 COMPONENTS Interpreter QUIET)
+if(Python3_FOUND)
+	add_test(NAME engine COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_engine.py $<TARGET_FILE:sentinela>)
+	if(Python3_VERSION VERSION_GREATER_EQUAL "3.10")
+		add_test(NAME adapter COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_adapter.py $<TARGET_FILE:sentinela>)
+	endif()
+endif()

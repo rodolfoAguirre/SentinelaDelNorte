@@ -1,0 +1,683 @@
+{
+  "referenceUrl": "https://wagon-wages-83948178.figma.site/assets/index-DinszQvh.js",
+  "graderVersion": "1.1.0-web",
+  "target": "native replay, not browser execution",
+  "success": true,
+  "records": [
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 1.7875803999999997
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.04387219999999979
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06539959999999974
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05229169999999977
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.04515299999999979
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05222650000000022
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05105560000000014
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05569310000000041
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.047947000000000115
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.0613472999999999
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.057259900000000016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.08954140000000006
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.055122399999999745
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.054614500000000135
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06919910000000028
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.0702523000000001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07009119999999984
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.057487500000000184
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07720989999999983
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06719830000000002
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06631540000000041
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.08966510000000016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.04755600000000004
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.10486589999999979
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06537489999999979
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06216449999999986
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.062013600000000224
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.057342999999999845
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.059255599999999506
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06342600000000038
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06142189999999937
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05733460000000014
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05579399999999987
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05441129999999975
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05029989999999998
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06761869999999999
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06923390000000018
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06487809999999991
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05448030000000017
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06817020000000047
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05622109999999975
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05361350000000038
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05001350000000002
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07829660000000058
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.051219900000000054
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.059797199999999974
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07496640000000025
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.08307489999999962
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.10036350000000038
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07300720000000001
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06102070000000003
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06974139999999988
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05891319999999996
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06894930000000023
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05909620000000086
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05785279999999966
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05683249999999953
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05786740000000009
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05498909999999978
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05975250000000051
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05505329999999958
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05318039999999928
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05297089999999935
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07926430000000073
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06728040000000056
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.08307110000000012
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05717409999999927
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.05312169999999969
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.08294219999999951
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.04667450000000008
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07506150000000071
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.06787530000000061
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07495919999999932
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.10629249999999957
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "nativeWallSeconds": 0.07041920000000028
+    }
+  ]
+}

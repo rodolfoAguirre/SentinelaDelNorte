@@ -1,0 +1,47 @@
+{
+  "status": "WORKING SYNTHETIC SCENARIO - NOT OFFICIAL",
+  "modules_per_link": 1,
+  "source": 0,
+  "sink": 4,
+  "tsp_selected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "domain": [
+    -6099.870840024331,
+    -2093.572115474918,
+    1873.2688375913187,
+    1140.9749826222649
+  ],
+  "projection": {
+    "type": "equirectangular",
+    "lat0": 50,
+    "lon0": 10,
+    "radius_km": 6371.0088
+  },
+  "links": "undirected; signed net flow with shared capacity",
+  "capacities": "assumed installation of additional modules",
+  "costs": "module_cost * assumed_modules; XML cost units unspecified",
+  "distances": "haversine endpoint distance, km, only existing links",
+  "demands": "original directed demand matrix, never capacities"
+}

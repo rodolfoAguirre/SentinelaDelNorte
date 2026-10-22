@@ -1,0 +1,15 @@
+{
+  "contract": "provisional-v1",
+  "mode": "mst",
+  "ok": true,
+  "result": {
+    "algorithm": "kruskal",
+    "components": 1,
+    "connected": true,
+    "edge_indices": [
+      0,
+      1
+    ],
+    "total_cost": 5
+  }
+}

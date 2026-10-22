@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "test_groups": 7,
+  "engine_calls": 846,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 46.04524440000023,
+  "seeds": [
+    2038,
+    2039,
+    2040,
+    2041,
+    2042
+  ],
+  "executable": "C:\\Users\\Rodolfo Aguirre\\Cosas de rery\\Tec\\Quinto Semestre\\Algoritmos Avanzados\\Midterm\\build\\sentinela.exe",
+  "executable_sha256": "1ed372a584cec1ac66ca6470370d2d94c144ff519cb508f326806f1c0b7c52ab",
+  "references": [
+    "naive string enumeration",
+    "Prim",
+    "TSP permutations + Floyd-Warshall",
+    "all s-t cuts",
+    "Voronoi half-plane/area/nearest properties"
+  ]
+}

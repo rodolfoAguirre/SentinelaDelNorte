@@ -1,0 +1,26 @@
+{
+  "mode": "max_flow",
+  "input": {
+    "n": 3,
+    "edges": [
+      {
+        "u": 0,
+        "v": 1,
+        "capacity": 2
+      },
+      {
+        "u": 1,
+        "v": 2,
+        "capacity": 3
+      },
+      {
+        "u": 0,
+        "v": 2,
+        "capacity": 9
+      }
+    ],
+    "source": 0,
+    "sink": 2,
+    "directed": true
+  }
+}

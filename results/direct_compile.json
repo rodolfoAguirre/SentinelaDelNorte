@@ -1,0 +1,39 @@
+{
+  "command": "g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic src/main.cpp -o build/sentinela-o2.exe -lpsapi",
+  "success": true,
+  "sha256": "020e29d9a94dee5a3d4634a169e01983aab343356135cd7a22b07393e6e20a97",
+  "examples": [
+    {
+      "example": "common_substring.input.json",
+      "same_result": true
+    },
+    {
+      "example": "matching.input.json",
+      "same_result": true
+    },
+    {
+      "example": "max_flow.input.json",
+      "same_result": true
+    },
+    {
+      "example": "mst.input.json",
+      "same_result": true
+    },
+    {
+      "example": "palindrome.input.json",
+      "same_result": true
+    },
+    {
+      "example": "strings.input.json",
+      "same_result": true
+    },
+    {
+      "example": "tsp.input.json",
+      "same_result": true
+    },
+    {
+      "example": "voronoi.input.json",
+      "same_result": true
+    }
+  ]
+}

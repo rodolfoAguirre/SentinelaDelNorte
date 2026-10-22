@@ -1,0 +1,14 @@
+{
+  "contract": "provisional-v1",
+  "mode": "common_substring",
+  "ok": true,
+  "result": {
+    "common": {
+      "end": 8,
+      "end2": 8,
+      "length": 6,
+      "start": 3,
+      "start2": 3
+    }
+  }
+}

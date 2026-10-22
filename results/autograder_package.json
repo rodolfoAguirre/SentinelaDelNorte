@@ -1,0 +1,24 @@
+{
+  "archive": "C:\\Users\\Rodolfo Aguirre\\Cosas de rery\\Tec\\Quinto Semestre\\Algoritmos Avanzados\\Midterm\\dist\\A0XXXXXX_SENTINEL_DEL_NORTE.zip",
+  "sha256": "597c66c4ae3c3b41f610ae051c05953f3f9a703504b14af6be846ea440763502",
+  "bytes": 23242,
+  "files": 10,
+  "entries": [
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/main.cpp",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/autograder.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/geometry.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/json.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/metrics.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/network.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/protocol.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/src/strings.h",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/README.md",
+    "A0XXXXXX_SENTINEL_DEL_NORTE/team.txt"
+  ],
+  "structureVerified": true,
+  "officialCompatibilityVerified": false,
+  "webContractVersion": "1.1.0-web",
+  "entryPointDefine": "SENTINELA_AUTOGRADER",
+  "studentIdPending": true,
+  "teamFile": "team.txt; autores y matriculas pendientes"
+}

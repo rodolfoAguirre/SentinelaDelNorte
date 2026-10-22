@@ -1,0 +1,9 @@
+{
+  "mode": "palindrome",
+  "input": {
+    "transmissions": [
+      "AABCDCBA12FFABBA",
+      "00BCDCBAFFABBA77"
+    ]
+  }
+}

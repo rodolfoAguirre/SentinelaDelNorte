@@ -1,0 +1,26 @@
+{
+  "contract": "provisional-v1",
+  "mode": "max_flow",
+  "ok": true,
+  "result": {
+    "algorithm": "dinic",
+    "flows": [
+      {
+        "edge_index": 0,
+        "flow": 2
+      },
+      {
+        "edge_index": 1,
+        "flow": 2
+      },
+      {
+        "edge_index": 2,
+        "flow": 9
+      }
+    ],
+    "source_side": [
+      0
+    ],
+    "value": 11
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "tests": 14,
+  "failures": 0,
+  "errors": 0,
+  "elapsedSeconds": 1.3299461999995401,
+  "executable": "C:\\Users\\Rodolfo Aguirre\\Cosas de rery\\Tec\\Quinto Semestre\\Algoritmos Avanzados\\Midterm\\build\\sentinela.exe",
+  "executableSha256": "0ccfe10e6feac58b446b1f5d15a8b8efb04c674cd3a5a5541046349d5f075a1f",
+  "adapterSha256": "07d69a49152ae96f7fa8512fda1a30d8b43ebd3815242f64eda14c870101033a",
+  "coverage": [
+    "eight real engine modes",
+    "real engine errors",
+    "relative file paths",
+    "uploaded hex",
+    "configuration",
+    "timeouts",
+    "process failures",
+    "protocol validation"
+  ]
+}

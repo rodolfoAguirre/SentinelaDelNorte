@@ -1,0 +1,14 @@
+{
+  "mode": "strings",
+  "input": {
+    "transmissions": [
+      "AABCDCBA12FFABBA",
+      "00BCDCBAFFABBA77"
+    ],
+    "patterns": [
+      "ABBA",
+      "FF",
+      "DEAD"
+    ]
+  }
+}

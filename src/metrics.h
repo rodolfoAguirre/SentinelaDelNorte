@@ -1,0 +1,39 @@
+// Consulta la memoria del proceso
+// Autores: pendientes | Matriculas: pendientes
+// Modificacion: 2026-10-21
+
+#pragma once
+
+#ifdef _WIN32
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#include <windows.h>
+#include <psapi.h>
+#elif defined(__linux__) || defined(__APPLE__)
+#include <sys/resource.h>
+#endif
+namespace adapter {
+
+// Consulta el pico de memoria del proceso
+// Parametros: ninguno
+// Retorno: bytes usados o -1 si no esta disponible
+inline double peakProcessBytes() {
+#ifdef _WIN32
+	PROCESS_MEMORY_COUNTERS info{};
+	if (GetProcessMemoryInfo(GetCurrentProcess(), &info, sizeof(info))) {
+		return double(info.PeakWorkingSetSize);
+	}
+#elif defined(__linux__) || defined(__APPLE__)
+	rusage info{};
+	if (getrusage(RUSAGE_SELF, &info) == 0) {
+#ifdef __APPLE__
+		return double(info.ru_maxrss);
+#else
+		return double(info.ru_maxrss) * 1024;
+#endif
+	}
+#endif
+	return -1;
+}
+}

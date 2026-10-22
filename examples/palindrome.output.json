@@ -1,0 +1,19 @@
+{
+  "contract": "provisional-v1",
+  "mode": "palindrome",
+  "ok": true,
+  "result": {
+    "palindromes": [
+      {
+        "end": 8,
+        "length": 7,
+        "start": 2
+      },
+      {
+        "end": 12,
+        "length": 6,
+        "start": 7
+      }
+    ]
+  }
+}

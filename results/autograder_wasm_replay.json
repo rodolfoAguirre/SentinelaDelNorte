@@ -1,0 +1,336 @@
+{
+  "target": "site compiler in Node, not browser UI",
+  "graderVersion": "1.1.0-web",
+  "compiler": "Clang 22.1.8, wasm32-wasi",
+  "sourceSha256": "8b0bba2355df1fa5bfda6a8b4c6d120fa6c4e1fac8e37ea1928c3cb4ceb3e8af",
+  "seed": 1114129554,
+  "profile": "normal",
+  "success": true,
+  "records": [
+    {
+      "mode": "mst",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 5913,
+      "runMs": 9,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "mst",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 2,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "mst",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 2,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "tsp",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 5,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "tsp",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "tsp",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "flow",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "flow",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "flow",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 2,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 4,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "matching",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "matching",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 2,
+      "runMs": 4,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "common",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 3,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "common",
+      "stress": false,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 2,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "mst",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 20,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "tsp",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 5,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "flow",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 6,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 11,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "matching",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 10,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 12,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    },
+    {
+      "mode": "common",
+      "stress": true,
+      "exitCode": 0,
+      "errors": [],
+      "stderr": "",
+      "compileMs": 1,
+      "runMs": 11,
+      "verdict": [
+        true,
+        "ok"
+      ]
+    }
+  ]
+}

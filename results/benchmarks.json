@@ -1,0 +1,781 @@
+{
+  "timestamp_utc": "2026-10-21T23:34:29.600517+00:00",
+  "seed": 2038,
+  "repetitions": 3,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "cpu_count": 12,
+  "python": "3.12.14",
+  "compiler": "g++.exe (GCC) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "options": "CMake Release: -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic",
+  "executable_sha256": "a6b6202767f50546018d9aed3a5d1ba840bbf097a19bbe11cb44b3707d4a5fe6",
+  "source_sha256": {
+    "geometry.h": "acc597f63f71ba0a5125a29f927e5da07c1090c2597ea4ee11cdaa2f58837aaa",
+    "json.h": "b69ab41251f6c6dd0e71648a0c9dcc72fa4b41cc8415ee6fd6fbd305850fd303",
+    "main.cpp": "7bfd2f9e05aa19febd2a95f0ac443ec06ba0470ede3ee0e4a8c99a669da06e28",
+    "metrics.h": "1035bf0a16fab5daff2e9eefe3665c1496c35268edea574143a163e1c7d2ed1d",
+    "network.h": "4f403b38fbcb31ad81b9bd70f1b16848e4715158134e753b4294ac00aa6c5cbb",
+    "protocol.h": "e043d89fdf3dea9c814fd545c1d8259a2a2833a84638c8dc30cb37eb4131a594",
+    "strings.h": "97209572b5b0fae8732ce16b378c89eae0c6313b1a841b100366f27a554bb5c9"
+  },
+  "timing": "steady_clock around C++ algorithms including validation, allocation, shortest paths; excludes parsing, normalization, file reads and result JSON construction",
+  "memory": "Peak process working set queried before JSON dump; includes runtime, input and result structures. Not isolated algorithm memory; serialization may raise later peak.",
+  "measurements": [
+    {
+      "mode": "mst",
+      "size": 100,
+      "kind": "sparse ~4V",
+      "median_algorithm_us": 25,
+      "median_process_wall_us": 26508.700000704266,
+      "max_peak_process_bytes": 5001216,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 25,
+          "process_wall_us": 45472.699999663746,
+          "peak_process_bytes": 5001216
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 24.8,
+          "process_wall_us": 26373.099997726968,
+          "peak_process_bytes": 4993024
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 25.1,
+          "process_wall_us": 26508.700000704266,
+          "peak_process_bytes": 4993024
+        }
+      ]
+    },
+    {
+      "mode": "mst",
+      "size": 500,
+      "kind": "sparse ~4V",
+      "median_algorithm_us": 147,
+      "median_process_wall_us": 24595.200000476325,
+      "max_peak_process_bytes": 5898240,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 140.7,
+          "process_wall_us": 24595.200000476325,
+          "peak_process_bytes": 5885952
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 148.9,
+          "process_wall_us": 25744.599999597995,
+          "peak_process_bytes": 5898240
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 147,
+          "process_wall_us": 24137.00000033714,
+          "peak_process_bytes": 5890048
+        }
+      ]
+    },
+    {
+      "mode": "mst",
+      "size": 2000,
+      "kind": "sparse ~4V",
+      "median_algorithm_us": 670.4,
+      "median_process_wall_us": 43105.99999735132,
+      "max_peak_process_bytes": 9297920,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 732.6,
+          "process_wall_us": 43839.09999887692,
+          "peak_process_bytes": 9289728
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 670.4,
+          "process_wall_us": 43105.99999735132,
+          "peak_process_bytes": 9289728
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 647.9,
+          "process_wall_us": 35093.799997412134,
+          "peak_process_bytes": 9297920
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 8,
+      "kind": "exact",
+      "median_algorithm_us": 43.5,
+      "median_process_wall_us": 25696.999997308012,
+      "max_peak_process_bytes": 4800512,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 46.4,
+          "process_wall_us": 23691.099999268772,
+          "peak_process_bytes": 4796416
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 41.9,
+          "process_wall_us": 29043.800001090858,
+          "peak_process_bytes": 4800512
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 43.5,
+          "process_wall_us": 25696.999997308012,
+          "peak_process_bytes": 4796416
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 12,
+      "kind": "exact",
+      "median_algorithm_us": 718.4,
+      "median_process_wall_us": 59860.39999697823,
+      "max_peak_process_bytes": 5091328,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 1371.8,
+          "process_wall_us": 59860.39999697823,
+          "peak_process_bytes": 5083136
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 620.1,
+          "process_wall_us": 69501.69999981881,
+          "peak_process_bytes": 5091328
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 718.4,
+          "process_wall_us": 53149.600000324426,
+          "peak_process_bytes": 5087232
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 16,
+      "kind": "exact",
+      "median_algorithm_us": 15145.8,
+      "median_process_wall_us": 79906.09999978915,
+      "max_peak_process_bytes": 11087872,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 14012.6,
+          "process_wall_us": 71359.69999944791,
+          "peak_process_bytes": 11087872
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 15145.8,
+          "process_wall_us": 85575.40000037989,
+          "peak_process_bytes": 11087872
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 21327.5,
+          "process_wall_us": 79906.09999978915,
+          "peak_process_bytes": 11083776
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 20,
+      "kind": "heuristic",
+      "median_algorithm_us": 65.3,
+      "median_process_wall_us": 52311.70000115526,
+      "max_peak_process_bytes": 4816896,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 68,
+          "process_wall_us": 59048.9999995043,
+          "peak_process_bytes": 4816896
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 65.3,
+          "process_wall_us": 49713.00000033807,
+          "peak_process_bytes": 4816896
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 64.3,
+          "process_wall_us": 52311.70000115526,
+          "peak_process_bytes": 4816896
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 100,
+      "kind": "heuristic",
+      "median_algorithm_us": 1015.4,
+      "median_process_wall_us": 64841.70000112499,
+      "max_peak_process_bytes": 5074944,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 1011.6,
+          "process_wall_us": 52908.70000317227,
+          "peak_process_bytes": 5074944
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 1015.4,
+          "process_wall_us": 65483.80000094767,
+          "peak_process_bytes": 5070848
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 2688.8,
+          "process_wall_us": 64841.70000112499,
+          "peak_process_bytes": 5070848
+        }
+      ]
+    },
+    {
+      "mode": "tsp",
+      "size": 300,
+      "kind": "heuristic",
+      "median_algorithm_us": 18967.7,
+      "median_process_wall_us": 85977.19999670517,
+      "max_peak_process_bytes": 6864896,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 25165.2,
+          "process_wall_us": 89746.60000239965,
+          "peak_process_bytes": 6856704
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 18967.7,
+          "process_wall_us": 78792.39999965648,
+          "peak_process_bytes": 6856704
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 17516,
+          "process_wall_us": 85977.19999670517,
+          "peak_process_bytes": 6864896
+        }
+      ]
+    },
+    {
+      "mode": "max_flow",
+      "size": 20,
+      "kind": "sparse ~6V",
+      "median_algorithm_us": 73.9,
+      "median_process_wall_us": 72283.6000022653,
+      "max_peak_process_bytes": 4976640,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 29.4,
+          "process_wall_us": 57236.699998611584,
+          "peak_process_bytes": 4964352
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 73.9,
+          "process_wall_us": 73539.1999987769,
+          "peak_process_bytes": 4976640
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 78.8,
+          "process_wall_us": 72283.6000022653,
+          "peak_process_bytes": 4972544
+        }
+      ]
+    },
+    {
+      "mode": "max_flow",
+      "size": 100,
+      "kind": "sparse ~6V",
+      "median_algorithm_us": 248,
+      "median_process_wall_us": 67329.90000091377,
+      "max_peak_process_bytes": 5857280,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 248,
+          "process_wall_us": 67329.90000091377,
+          "peak_process_bytes": 5853184
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 144.2,
+          "process_wall_us": 67781.49999809102,
+          "peak_process_bytes": 5857280
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 300.6,
+          "process_wall_us": 55932.200000825105,
+          "peak_process_bytes": 5857280
+        }
+      ]
+    },
+    {
+      "mode": "max_flow",
+      "size": 400,
+      "kind": "sparse ~6V",
+      "median_algorithm_us": 778.5,
+      "median_process_wall_us": 71058.50000152714,
+      "max_peak_process_bytes": 8790016,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 449.4,
+          "process_wall_us": 88834.89999789163,
+          "peak_process_bytes": 8790016
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 778.5,
+          "process_wall_us": 58176.30000092322,
+          "peak_process_bytes": 8785920
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 1230.5,
+          "process_wall_us": 71058.50000152714,
+          "peak_process_bytes": 8790016
+        }
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "size": 20,
+      "kind": "uniform sites",
+      "median_algorithm_us": 292.9,
+      "median_process_wall_us": 73146.09999957611,
+      "max_peak_process_bytes": 4874240,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 198.4,
+          "process_wall_us": 73333.89999985229,
+          "peak_process_bytes": 4874240
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 292.9,
+          "process_wall_us": 52439.20000066282,
+          "peak_process_bytes": 4870144
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 600.2,
+          "process_wall_us": 73146.09999957611,
+          "peak_process_bytes": 4861952
+        }
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "size": 100,
+      "kind": "uniform sites",
+      "median_algorithm_us": 3582.5,
+      "median_process_wall_us": 67920.99999802304,
+      "max_peak_process_bytes": 5181440,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 3677.5,
+          "process_wall_us": 66985.40000070352,
+          "peak_process_bytes": 5181440
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 1774.7,
+          "process_wall_us": 67920.99999802304,
+          "peak_process_bytes": 5181440
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 3582.5,
+          "process_wall_us": 73771.7000010889,
+          "peak_process_bytes": 5181440
+        }
+      ]
+    },
+    {
+      "mode": "voronoi",
+      "size": 300,
+      "kind": "uniform sites",
+      "median_algorithm_us": 13582.2,
+      "median_process_wall_us": 86084.29999731015,
+      "max_peak_process_bytes": 6119424,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 13582.2,
+          "process_wall_us": 80456.20000120834,
+          "peak_process_bytes": 6107136
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 12132.3,
+          "process_wall_us": 86084.29999731015,
+          "peak_process_bytes": 6119424
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 16428.8,
+          "process_wall_us": 102492.99999850336,
+          "peak_process_bytes": 6111232
+        }
+      ]
+    },
+    {
+      "mode": "matching",
+      "size": 1000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 31.7,
+      "median_process_wall_us": 64910.50000113319,
+      "max_peak_process_bytes": 4775936,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 26.3,
+          "process_wall_us": 58456.50000264868,
+          "peak_process_bytes": 4775936
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 36.2,
+          "process_wall_us": 67419.79999787873,
+          "peak_process_bytes": 4767744
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 31.7,
+          "process_wall_us": 64910.50000113319,
+          "peak_process_bytes": 4775936
+        }
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "size": 1000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 32.3,
+      "median_process_wall_us": 74172.29999919073,
+      "max_peak_process_bytes": 4755456,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 29.6,
+          "process_wall_us": 76555.89999922086,
+          "peak_process_bytes": 4755456
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 32.3,
+          "process_wall_us": 74172.29999919073,
+          "peak_process_bytes": 4755456
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 43.7,
+          "process_wall_us": 70759.30000064545,
+          "peak_process_bytes": 4755456
+        }
+      ]
+    },
+    {
+      "mode": "common_substring",
+      "size": 1000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 134.2,
+      "median_process_wall_us": 69957.69999775803,
+      "max_peak_process_bytes": 4866048,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 100.2,
+          "process_wall_us": 64499.09999719239,
+          "peak_process_bytes": 4853760
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 139.8,
+          "process_wall_us": 71425.30000055558,
+          "peak_process_bytes": 4866048
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 134.2,
+          "process_wall_us": 69957.69999775803,
+          "peak_process_bytes": 4861952
+        }
+      ]
+    },
+    {
+      "mode": "matching",
+      "size": 10000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 149.5,
+      "median_process_wall_us": 69425.90000107884,
+      "max_peak_process_bytes": 4837376,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 130.8,
+          "process_wall_us": 43126.79999929969,
+          "peak_process_bytes": 4837376
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 149.5,
+          "process_wall_us": 70920.8000007493,
+          "peak_process_bytes": 4837376
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 160.6,
+          "process_wall_us": 69425.90000107884,
+          "peak_process_bytes": 4833280
+        }
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "size": 10000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 274.5,
+      "median_process_wall_us": 60797.19999979716,
+      "max_peak_process_bytes": 4902912,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 283.8,
+          "process_wall_us": 60797.19999979716,
+          "peak_process_bytes": 4902912
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 226.8,
+          "process_wall_us": 58968.49999771803,
+          "peak_process_bytes": 4902912
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 274.5,
+          "process_wall_us": 74767.90000146138,
+          "peak_process_bytes": 4898816
+        }
+      ]
+    },
+    {
+      "mode": "common_substring",
+      "size": 10000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 1305.6,
+      "median_process_wall_us": 70961.80000007735,
+      "max_peak_process_bytes": 6021120,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 1206.5,
+          "process_wall_us": 70961.80000007735,
+          "peak_process_bytes": 5988352
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 1305.6,
+          "process_wall_us": 57675.39999942528,
+          "peak_process_bytes": 5963776
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 1429.6,
+          "process_wall_us": 92841.10000226065,
+          "peak_process_bytes": 6021120
+        }
+      ]
+    },
+    {
+      "mode": "matching",
+      "size": 100000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 1365.4,
+      "median_process_wall_us": 68502.69999995362,
+      "max_peak_process_bytes": 5517312,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 1365.4,
+          "process_wall_us": 75775.2999998047,
+          "peak_process_bytes": 5513216
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 1388.6,
+          "process_wall_us": 61876.20000127936,
+          "peak_process_bytes": 5513216
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 956.1,
+          "process_wall_us": 68502.69999995362,
+          "peak_process_bytes": 5517312
+        }
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "size": 100000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 2520.2,
+      "median_process_wall_us": 76804.50000043493,
+      "max_peak_process_bytes": 6316032,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 2043.1,
+          "process_wall_us": 59653.8000027067,
+          "peak_process_bytes": 6311936
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 2520.2,
+          "process_wall_us": 76804.50000043493,
+          "peak_process_bytes": 6316032
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 2750.4,
+          "process_wall_us": 82645.00000223052,
+          "peak_process_bytes": 6311936
+        }
+      ]
+    },
+    {
+      "mode": "common_substring",
+      "size": 100000,
+      "kind": "random hex; matching patterns intentionally rare",
+      "median_algorithm_us": 13069.5,
+      "median_process_wall_us": 91337.09999878192,
+      "max_peak_process_bytes": 16805888,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 13982.9,
+          "process_wall_us": 78182.29999975301,
+          "peak_process_bytes": 16764928
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 13069.5,
+          "process_wall_us": 91337.09999878192,
+          "peak_process_bytes": 16805888
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 12193.6,
+          "process_wall_us": 93219.50000230572,
+          "peak_process_bytes": 16764928
+        }
+      ]
+    },
+    {
+      "mode": "matching",
+      "size": 100000,
+      "kind": "repeated hex",
+      "median_algorithm_us": 1146.5,
+      "median_process_wall_us": 64814.400000614114,
+      "max_peak_process_bytes": 5525504,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 916.6,
+          "process_wall_us": 61144.199997215765,
+          "peak_process_bytes": 5517312
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 1146.5,
+          "process_wall_us": 78218.80000119563,
+          "peak_process_bytes": 5513216
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 1189.9,
+          "process_wall_us": 64814.400000614114,
+          "peak_process_bytes": 5525504
+        }
+      ]
+    },
+    {
+      "mode": "palindrome",
+      "size": 100000,
+      "kind": "repeated hex",
+      "median_algorithm_us": 4922.6,
+      "median_process_wall_us": 67296.00000107894,
+      "max_peak_process_bytes": 6307840,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 3680.6,
+          "process_wall_us": 60265.600001002895,
+          "peak_process_bytes": 6307840
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 5206.4,
+          "process_wall_us": 67296.00000107894,
+          "peak_process_bytes": 6307840
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 4922.6,
+          "process_wall_us": 84141.70000105514,
+          "peak_process_bytes": 6307840
+        }
+      ]
+    },
+    {
+      "mode": "common_substring",
+      "size": 100000,
+      "kind": "repeated hex",
+      "median_algorithm_us": 5221.8,
+      "median_process_wall_us": 70347.90000034263,
+      "max_peak_process_bytes": 13783040,
+      "samples": [
+        {
+          "repeat": 0,
+          "algorithm_us": 6282.9,
+          "process_wall_us": 70347.90000034263,
+          "peak_process_bytes": 13783040
+        },
+        {
+          "repeat": 1,
+          "algorithm_us": 5221.8,
+          "process_wall_us": 72215.80000259564,
+          "peak_process_bytes": 13766656
+        },
+        {
+          "repeat": 2,
+          "algorithm_us": 3471.4,
+          "process_wall_us": 62570.0999989931,
+          "peak_process_bytes": 13766656
+        }
+      ]
+    }
+  ]
+}

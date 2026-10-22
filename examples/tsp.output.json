@@ -1,0 +1,30 @@
+{
+  "contract": "provisional-v1",
+  "mode": "tsp",
+  "ok": true,
+  "result": {
+    "algorithm": "held_karp",
+    "exact": true,
+    "improvements": 0,
+    "physical_edge_indices": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "physical_nodes": [
+      0,
+      1,
+      2,
+      1,
+      0
+    ],
+    "total_distance": 10,
+    "tour": [
+      0,
+      2,
+      1,
+      0
+    ]
+  }
+}

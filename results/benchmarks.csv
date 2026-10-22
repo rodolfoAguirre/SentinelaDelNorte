@@ -1,0 +1,28 @@
+mode,size,kind,median_algorithm_us,median_process_wall_us,max_peak_process_bytes
+mst,100,sparse ~4V,25,26508.700000704266,5001216
+mst,500,sparse ~4V,147,24595.200000476325,5898240
+mst,2000,sparse ~4V,670.4,43105.99999735132,9297920
+tsp,8,exact,43.5,25696.999997308012,4800512
+tsp,12,exact,718.4,59860.39999697823,5091328
+tsp,16,exact,15145.8,79906.09999978915,11087872
+tsp,20,heuristic,65.3,52311.70000115526,4816896
+tsp,100,heuristic,1015.4,64841.70000112499,5074944
+tsp,300,heuristic,18967.7,85977.19999670517,6864896
+max_flow,20,sparse ~6V,73.9,72283.6000022653,4976640
+max_flow,100,sparse ~6V,248,67329.90000091377,5857280
+max_flow,400,sparse ~6V,778.5,71058.50000152714,8790016
+voronoi,20,uniform sites,292.9,73146.09999957611,4874240
+voronoi,100,uniform sites,3582.5,67920.99999802304,5181440
+voronoi,300,uniform sites,13582.2,86084.29999731015,6119424
+matching,1000,random hex; matching patterns intentionally rare,31.7,64910.50000113319,4775936
+palindrome,1000,random hex; matching patterns intentionally rare,32.3,74172.29999919073,4755456
+common_substring,1000,random hex; matching patterns intentionally rare,134.2,69957.69999775803,4866048
+matching,10000,random hex; matching patterns intentionally rare,149.5,69425.90000107884,4837376
+palindrome,10000,random hex; matching patterns intentionally rare,274.5,60797.19999979716,4902912
+common_substring,10000,random hex; matching patterns intentionally rare,1305.6,70961.80000007735,6021120
+matching,100000,random hex; matching patterns intentionally rare,1365.4,68502.69999995362,5517312
+palindrome,100000,random hex; matching patterns intentionally rare,2520.2,76804.50000043493,6316032
+common_substring,100000,random hex; matching patterns intentionally rare,13069.5,91337.09999878192,16805888
+matching,100000,repeated hex,1146.5,64814.400000614114,5525504
+palindrome,100000,repeated hex,4922.6,67296.00000107894,6307840
+common_substring,100000,repeated hex,5221.8,70347.90000034263,13783040

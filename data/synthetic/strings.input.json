@@ -1,0 +1,24 @@
+{
+  "mode": "strings",
+  "input": {
+    "transmissions": [
+      {
+        "file": "data/synthetic/transmission1.txt"
+      },
+      {
+        "file": "data/synthetic/transmission2.txt"
+      }
+    ],
+    "patterns": [
+      {
+        "file": "data/synthetic/mcode1.txt"
+      },
+      {
+        "file": "data/synthetic/mcode2.txt"
+      },
+      {
+        "file": "data/synthetic/mcode3.txt"
+      }
+    ]
+  }
+}

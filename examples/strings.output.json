@@ -1,0 +1,64 @@
+{
+  "contract": "provisional-v1",
+  "mode": "strings",
+  "ok": true,
+  "result": {
+    "common": {
+      "end": 8,
+      "end2": 8,
+      "length": 6,
+      "start": 3,
+      "start2": 3
+    },
+    "matches": [
+      {
+        "found": true,
+        "pattern": 1,
+        "position": 13,
+        "transmission": 1
+      },
+      {
+        "found": true,
+        "pattern": 2,
+        "position": 11,
+        "transmission": 1
+      },
+      {
+        "found": false,
+        "pattern": 3,
+        "position": 0,
+        "transmission": 1
+      },
+      {
+        "found": true,
+        "pattern": 1,
+        "position": 11,
+        "transmission": 2
+      },
+      {
+        "found": true,
+        "pattern": 2,
+        "position": 9,
+        "transmission": 2
+      },
+      {
+        "found": false,
+        "pattern": 3,
+        "position": 0,
+        "transmission": 2
+      }
+    ],
+    "palindromes": [
+      {
+        "end": 8,
+        "length": 7,
+        "start": 2
+      },
+      {
+        "end": 12,
+        "length": 6,
+        "start": 7
+      }
+    ]
+  }
+}
