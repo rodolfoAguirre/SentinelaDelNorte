@@ -1,109 +1,1752 @@
 {
   "seed": 20261022,
-  "executable": "C:\\Users\\Rodolfo Aguirre\\Cosas de rery\\Tec\\Quinto Semestre\\Algoritmos Avanzados\\Midterm\\build\\sentinela.exe",
+  "executable": "sentinela",
   "success": true,
+  "platform": "Linux-7.2.11-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "processor": "x86_64",
+  "python": "3.14.8",
+  "quick": false,
+  "timeBudgetSeconds": 10.0,
+  "memoryBudgetBytes": 1073741824,
+  "totalSeconds": 38.74,
+  "cases": 155,
+  "slowestCase": {
+    "group": "escala:limite",
+    "case": "limite-tsp-heuristico",
+    "mode": "tsp",
+    "size": 500,
+    "payloadBytes": 7958077,
+    "wallSeconds": 1.6274,
+    "algorithmSeconds": 1.474453,
+    "peakProcessBytes": 124653568
+  },
+  "heaviestCase": {
+    "group": "escalabilidad",
+    "case": "max_flow-200000-r2",
+    "mode": "max_flow",
+    "size": 200000,
+    "payloadBytes": 7956584,
+    "wallSeconds": 0.4424,
+    "algorithmSeconds": 0.01708,
+    "peakProcessBytes": 292294656
+  },
+  "scaling": [
+    {
+      "algorithm": "mst",
+      "theory": "O(E log E)",
+      "sizes": [
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "medianAlgorithmSeconds": [
+        0.002207,
+        0.004622,
+        0.010543,
+        0.025276
+      ],
+      "logLogSlope": 1.174,
+      "expectedSlope": 1.0,
+      "withinExpectation": true
+    },
+    {
+      "algorithm": "max_flow",
+      "theory": "O(V^2 E) peor caso",
+      "sizes": [
+        25000,
+        50000,
+        100000,
+        200000
+      ],
+      "medianAlgorithmSeconds": [
+        0.003788,
+        0.005756,
+        0.012121,
+        0.026647
+      ],
+      "logLogSlope": 0.952,
+      "expectedSlope": null,
+      "withinExpectation": null
+    },
+    {
+      "algorithm": "tsp_heuristico",
+      "theory": "O(k (V+E) log V + P k^2)",
+      "sizes": [
+        62,
+        125,
+        250,
+        500
+      ],
+      "medianAlgorithmSeconds": [
+        0.034383,
+        0.074372,
+        0.152938,
+        0.337239
+      ],
+      "logLogSlope": 1.088,
+      "expectedSlope": 1.0,
+      "withinExpectation": true
+    },
+    {
+      "algorithm": "tsp_held_karp",
+      "theory": "O(2^k k^2)",
+      "sizes": [
+        12,
+        14,
+        16,
+        18
+      ],
+      "medianAlgorithmSeconds": [
+        0.008777,
+        0.01249,
+        0.02628,
+        0.088452
+      ],
+      "logLogSlope": 5.579,
+      "expectedSlope": null,
+      "withinExpectation": null
+    },
+    {
+      "algorithm": "voronoi",
+      "theory": "O(n^2 m)",
+      "sizes": [
+        125,
+        250,
+        500,
+        1000
+      ],
+      "medianAlgorithmSeconds": [
+        0.001082,
+        0.004289,
+        0.016607,
+        0.068777
+      ],
+      "logLogSlope": 1.992,
+      "expectedSlope": 2.0,
+      "withinExpectation": true
+    },
+    {
+      "algorithm": "matching",
+      "theory": "O(n + m)",
+      "sizes": [
+        250000,
+        500000,
+        1000000,
+        2000000
+      ],
+      "medianAlgorithmSeconds": [
+        0.001468,
+        0.00306,
+        0.005876,
+        0.012544
+      ],
+      "logLogSlope": 1.023,
+      "expectedSlope": 1.0,
+      "withinExpectation": true
+    },
+    {
+      "algorithm": "palindrome",
+      "theory": "O(n)",
+      "sizes": [
+        250000,
+        500000,
+        1000000,
+        2000000
+      ],
+      "medianAlgorithmSeconds": [
+        0.004402,
+        0.008493,
+        0.017455,
+        0.03684
+      ],
+      "logLogSlope": 1.023,
+      "expectedSlope": 1.0,
+      "withinExpectation": true
+    },
+    {
+      "algorithm": "common_substring",
+      "theory": "O(n)",
+      "sizes": [
+        250000,
+        500000,
+        1000000,
+        2000000
+      ],
+      "medianAlgorithmSeconds": [
+        0.099368,
+        0.254059,
+        0.370923,
+        1.438245
+      ],
+      "logLogSlope": 1.211,
+      "expectedSlope": 1.0,
+      "withinExpectation": true
+    }
+  ],
   "records": [
     {
-      "scale": "pequena",
+      "group": "escala:pequena",
+      "case": "pequena-mst",
       "mode": "mst",
-      "size": 12,
-      "edges": 22,
-      "seconds": 0.06538700000055542
+      "size": 30,
+      "payloadBytes": 993,
+      "wallSeconds": 0.0025,
+      "algorithmSeconds": 3e-06,
+      "peakProcessBytes": 4472832
     },
     {
-      "scale": "pequena",
+      "group": "escala:pequena",
+      "case": "pequena-tsp-heuristico",
       "mode": "tsp",
       "size": 8,
-      "edges": 8,
-      "exact": true,
-      "seconds": 0.056028900000455906
+      "payloadBytes": 1191,
+      "wallSeconds": 0.0014,
+      "algorithmSeconds": 1.5e-05,
+      "peakProcessBytes": 4476928
     },
     {
-      "scale": "pequena",
+      "group": "escala:pequena",
+      "case": "pequena-tsp-exacto",
+      "mode": "tsp",
+      "size": 8,
+      "payloadBytes": 1172,
+      "wallSeconds": 0.0015,
+      "algorithmSeconds": 3.8e-05,
+      "peakProcessBytes": 4132864
+    },
+    {
+      "group": "escala:pequena",
+      "case": "pequena-flujo-dirigido",
       "mode": "max_flow",
-      "size": 12,
-      "edges": 22,
-      "seconds": 0.05717220000042289
+      "size": 30,
+      "payloadBytes": 1159,
+      "wallSeconds": 0.0017,
+      "algorithmSeconds": 8e-06,
+      "peakProcessBytes": 4493312
     },
     {
-      "scale": "pequena",
+      "group": "escala:pequena",
+      "case": "pequena-flujo-no-dirigido",
+      "mode": "max_flow",
+      "size": 30,
+      "payloadBytes": 1160,
+      "wallSeconds": 0.0015,
+      "algorithmSeconds": 8e-06,
+      "peakProcessBytes": 4497408
+    },
+    {
+      "group": "escala:pequena",
+      "case": "pequena-voronoi",
       "mode": "voronoi",
       "size": 12,
-      "seconds": 0.05933560000084981
+      "payloadBytes": 8742,
+      "wallSeconds": 0.0019,
+      "algorithmSeconds": 2.2e-05,
+      "peakProcessBytes": 4456448
     },
     {
-      "scale": "pequena",
+      "group": "escala:pequena",
+      "case": "pequena-cadenas",
       "mode": "strings",
       "size": 80,
-      "seconds": 0.06002319999970496
+      "payloadBytes": 328,
+      "wallSeconds": 0.0013,
+      "algorithmSeconds": 9e-06,
+      "peakProcessBytes": 4341760
     },
     {
-      "scale": "mediana",
+      "group": "escala:mediana",
+      "case": "mediana-mst",
       "mode": "mst",
-      "size": 120,
-      "edges": 609,
-      "seconds": 0.08466370000132883
+      "size": 2000,
+      "payloadBytes": 67505,
+      "wallSeconds": 0.0037,
+      "algorithmSeconds": 0.000133,
+      "peakProcessBytes": 5472256
     },
     {
-      "scale": "mediana",
+      "group": "escala:mediana",
+      "case": "mediana-tsp-heuristico",
       "mode": "tsp",
       "size": 60,
-      "edges": 262,
-      "exact": false,
-      "seconds": 0.07084519999989425
+      "payloadBytes": 75905,
+      "wallSeconds": 0.0064,
+      "algorithmSeconds": 0.002736,
+      "peakProcessBytes": 5468160
     },
     {
-      "scale": "mediana",
-      "mode": "max_flow",
-      "size": 120,
-      "edges": 609,
-      "seconds": 0.06191489999946498
-    },
-    {
-      "scale": "mediana",
-      "mode": "voronoi",
-      "size": 120,
-      "seconds": 0.07700819999990927
-    },
-    {
-      "scale": "mediana",
-      "mode": "strings",
-      "size": 24000,
-      "seconds": 0.06417040000087582
-    },
-    {
-      "scale": "grande",
-      "mode": "mst",
-      "size": 600,
-      "edges": 2975,
-      "seconds": 0.06775150000066787
-    },
-    {
-      "scale": "grande",
+      "group": "escala:mediana",
+      "case": "mediana-tsp-exacto",
       "mode": "tsp",
-      "size": 300,
-      "edges": 5583,
-      "exact": false,
-      "seconds": 0.10841009999967355
+      "size": 12,
+      "payloadBytes": 75671,
+      "wallSeconds": 0.0048,
+      "algorithmSeconds": 0.001341,
+      "peakProcessBytes": 5779456
     },
     {
-      "scale": "grande",
+      "group": "escala:mediana",
+      "case": "mediana-flujo-dirigido",
       "mode": "max_flow",
-      "size": 600,
-      "edges": 2975,
-      "seconds": 0.07401159999972151
+      "size": 2000,
+      "payloadBytes": 75604,
+      "wallSeconds": 0.0067,
+      "algorithmSeconds": 0.000314,
+      "peakProcessBytes": 7393280
     },
     {
-      "scale": "grande",
+      "group": "escala:mediana",
+      "case": "mediana-flujo-no-dirigido",
+      "mode": "max_flow",
+      "size": 2000,
+      "payloadBytes": 75605,
+      "wallSeconds": 0.0073,
+      "algorithmSeconds": 0.000176,
+      "peakProcessBytes": 7184384
+    },
+    {
+      "group": "escala:mediana",
+      "case": "mediana-voronoi",
       "mode": "voronoi",
-      "size": 300,
-      "seconds": 0.07464209999852756
+      "size": 150,
+      "payloadBytes": 211063,
+      "wallSeconds": 0.0112,
+      "algorithmSeconds": 0.002853,
+      "peakProcessBytes": 6995968
     },
     {
-      "scale": "grande",
+      "group": "escala:mediana",
+      "case": "mediana-cadenas",
       "mode": "strings",
-      "size": 120000,
-      "seconds": 0.08993989999908081
+      "size": 20000,
+      "payloadBytes": 40212,
+      "wallSeconds": 0.0067,
+      "algorithmSeconds": 0.003636,
+      "peakProcessBytes": 6483968
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-mst",
+      "mode": "mst",
+      "size": 50000,
+      "payloadBytes": 1733295,
+      "wallSeconds": 0.0506,
+      "algorithmSeconds": 0.004483,
+      "peakProcessBytes": 29843456
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-tsp-heuristico",
+      "mode": "tsp",
+      "size": 250,
+      "payloadBytes": 1934784,
+      "wallSeconds": 0.1626,
+      "algorithmSeconds": 0.128777,
+      "peakProcessBytes": 34480128
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-tsp-exacto",
+      "mode": "tsp",
+      "size": 16,
+      "payloadBytes": 1933618,
+      "wallSeconds": 0.058,
+      "algorithmSeconds": 0.024032,
+      "peakProcessBytes": 36970496
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-flujo-dirigido",
+      "mode": "max_flow",
+      "size": 50000,
+      "payloadBytes": 1933579,
+      "wallSeconds": 0.1088,
+      "algorithmSeconds": 0.005643,
+      "peakProcessBytes": 76423168
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-flujo-no-dirigido",
+      "mode": "max_flow",
+      "size": 50000,
+      "payloadBytes": 1933580,
+      "wallSeconds": 0.1042,
+      "algorithmSeconds": 0.002477,
+      "peakProcessBytes": 76423168
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-voronoi",
+      "mode": "voronoi",
+      "size": 500,
+      "payloadBytes": 2068911,
+      "wallSeconds": 0.1216,
+      "algorithmSeconds": 0.059393,
+      "peakProcessBytes": 26918912
+    },
+    {
+      "group": "escala:grande",
+      "case": "grande-cadenas",
+      "mode": "strings",
+      "size": 250000,
+      "payloadBytes": 500212,
+      "wallSeconds": 0.1119,
+      "algorithmSeconds": 0.105769,
+      "peakProcessBytes": 33558528
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-mst",
+      "mode": "mst",
+      "size": 200000,
+      "payloadBytes": 7154357,
+      "wallSeconds": 0.1964,
+      "algorithmSeconds": 0.025041,
+      "peakProcessBytes": 106999808
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-tsp-heuristico",
+      "mode": "tsp",
+      "size": 500,
+      "payloadBytes": 7958077,
+      "wallSeconds": 1.6274,
+      "algorithmSeconds": 1.474453,
+      "peakProcessBytes": 124653568
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-tsp-exacto",
+      "mode": "tsp",
+      "size": 18,
+      "payloadBytes": 7955423,
+      "wallSeconds": 0.3291,
+      "algorithmSeconds": 0.144249,
+      "peakProcessBytes": 137392128
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-flujo-dirigido",
+      "mode": "max_flow",
+      "size": 200000,
+      "payloadBytes": 7955327,
+      "wallSeconds": 0.6004,
+      "algorithmSeconds": 0.025578,
+      "peakProcessBytes": 292020224
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-flujo-no-dirigido",
+      "mode": "max_flow",
+      "size": 200000,
+      "payloadBytes": 7955328,
+      "wallSeconds": 0.4669,
+      "algorithmSeconds": 0.010251,
+      "peakProcessBytes": 291999744
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-voronoi",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 4101021,
+      "wallSeconds": 0.3353,
+      "algorithmSeconds": 0.217693,
+      "peakProcessBytes": 49381376
+    },
+    {
+      "group": "escala:limite",
+      "case": "limite-cadenas",
+      "mode": "strings",
+      "size": 2000000,
+      "payloadBytes": 4000212,
+      "wallSeconds": 1.3737,
+      "algorithmSeconds": 1.339654,
+      "peakProcessBytes": 244719616
+    },
+    {
+      "group": "adversarial",
+      "case": "mst-desconectado-1000-componentes",
+      "mode": "mst",
+      "size": 2000,
+      "payloadBytes": 33955,
+      "wallSeconds": 0.0022,
+      "algorithmSeconds": 2e-05,
+      "peakProcessBytes": 5177344
+    },
+    {
+      "group": "adversarial",
+      "case": "mst-empates-grafo-completo",
+      "mode": "mst",
+      "size": 44850,
+      "payloadBytes": 1447224,
+      "wallSeconds": 0.0323,
+      "algorithmSeconds": 0.000949,
+      "peakProcessBytes": 27189248
+    },
+    {
+      "group": "adversarial",
+      "case": "mst-enlaces-paralelos-negativos",
+      "mode": "mst",
+      "size": 2000,
+      "payloadBytes": 62844,
+      "wallSeconds": 0.0026,
+      "algorithmSeconds": 2.3e-05,
+      "peakProcessBytes": 5451776
+    },
+    {
+      "group": "adversarial",
+      "case": "tsp-linea-500-centrales",
+      "mode": "tsp",
+      "size": 500,
+      "payloadBytes": 78545,
+      "wallSeconds": 0.0182,
+      "algorithmSeconds": 0.013125,
+      "peakProcessBytes": 21721088
+    },
+    {
+      "group": "adversarial",
+      "case": "tsp-estrella-exacto-18",
+      "mode": "tsp",
+      "size": 18,
+      "payloadBytes": 735,
+      "wallSeconds": 0.0677,
+      "algorithmSeconds": 0.066225,
+      "peakProcessBytes": 32698368
+    },
+    {
+      "group": "adversarial",
+      "case": "tsp-una-central",
+      "mode": "tsp",
+      "size": 1,
+      "payloadBytes": 81,
+      "wallSeconds": 0.0012,
+      "algorithmSeconds": 2e-06,
+      "peakProcessBytes": 4448256
+    },
+    {
+      "group": "adversarial",
+      "case": "flujo-cadena-2000-profundidad",
+      "mode": "max_flow",
+      "size": 2000,
+      "payloadBytes": 79656,
+      "wallSeconds": 0.0052,
+      "algorithmSeconds": 0.000221,
+      "peakProcessBytes": 7610368
+    },
+    {
+      "group": "adversarial",
+      "case": "flujo-capas-unitarias-95k",
+      "mode": "max_flow",
+      "size": 95100,
+      "payloadBytes": 3603506,
+      "wallSeconds": 0.2526,
+      "algorithmSeconds": 0.00371,
+      "peakProcessBytes": 141139968
+    },
+    {
+      "group": "adversarial",
+      "case": "flujo-sin-camino",
+      "mode": "max_flow",
+      "size": 1,
+      "payloadBytes": 149,
+      "wallSeconds": 0.0018,
+      "algorithmSeconds": 3.1e-05,
+      "peakProcessBytes": 4321280
+    },
+    {
+      "group": "adversarial",
+      "case": "voronoi-1000-colineales",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 27870,
+      "wallSeconds": 0.0526,
+      "algorithmSeconds": 0.044848,
+      "peakProcessBytes": 7524352
+    },
+    {
+      "group": "adversarial",
+      "case": "voronoi-rejilla-992-equidistantes",
+      "mode": "voronoi",
+      "size": 992,
+      "payloadBytes": 25767,
+      "wallSeconds": 0.1207,
+      "algorithmSeconds": 0.111048,
+      "peakProcessBytes": 8880128
+    },
+    {
+      "group": "adversarial",
+      "case": "voronoi-500-duplicados",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 12084,
+      "wallSeconds": 0.0163,
+      "algorithmSeconds": 0.013353,
+      "peakProcessBytes": 4730880
+    },
+    {
+      "group": "adversarial",
+      "case": "voronoi-un-sitio-fuera-de-escala",
+      "mode": "voronoi",
+      "size": 1,
+      "payloadBytes": 167,
+      "wallSeconds": 0.0016,
+      "algorithmSeconds": 1e-06,
+      "peakProcessBytes": 4452352
+    },
+    {
+      "group": "adversarial",
+      "case": "cadenas-todo-A-2M",
+      "mode": "strings",
+      "size": 2000000,
+      "payloadBytes": 5001101,
+      "wallSeconds": 0.2525,
+      "algorithmSeconds": 0.224889,
+      "peakProcessBytes": 190996480
+    },
+    {
+      "group": "adversarial",
+      "case": "cadenas-vacias",
+      "mode": "strings",
+      "size": 0,
+      "payloadBytes": 102,
+      "wallSeconds": 0.002,
+      "algorithmSeconds": 1e-06,
+      "peakProcessBytes": 4214784
+    },
+    {
+      "group": "adversarial",
+      "case": "cadenas-patron-mayor-que-texto",
+      "mode": "strings",
+      "size": 3,
+      "payloadBytes": 5114,
+      "wallSeconds": 0.0016,
+      "algorithmSeconds": 1.6e-05,
+      "peakProcessBytes": 4218880
+    },
+    {
+      "group": "adversarial",
+      "case": "cadenas-periodicas-250k",
+      "mode": "strings",
+      "size": 249999,
+      "payloadBytes": 503103,
+      "wallSeconds": 0.0292,
+      "algorithmSeconds": 0.025363,
+      "peakProcessBytes": 26738688
+    },
+    {
+      "group": "adversarial",
+      "case": "cadenas-alternadas-2M",
+      "mode": "strings",
+      "size": 2000000,
+      "payloadBytes": 4001106,
+      "wallSeconds": 0.2189,
+      "algorithmSeconds": 0.198002,
+      "peakProcessBytes": 184094720
+    },
+    {
+      "group": "rechazo",
+      "case": "mst-2001-nodos",
+      "mode": "mst",
+      "size": null,
+      "payloadBytes": 67,
+      "wallSeconds": 0.0012,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Graph limits: 1..2000 nodes, <=200000 edges"
+    },
+    {
+      "group": "rechazo",
+      "case": "mst-200001-enlaces",
+      "mode": "mst",
+      "size": null,
+      "payloadBytes": 5800091,
+      "wallSeconds": 0.1364,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Graph limits: 1..2000 nodes, <=200000 edges"
+    },
+    {
+      "group": "rechazo",
+      "case": "mst-peso-1e13",
+      "mode": "mst",
+      "size": null,
+      "payloadBytes": 106,
+      "wallSeconds": 0.0013,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Invalid edge endpoints/weight (self-loops excluded, |weight|<=1e12)"
+    },
+    {
+      "group": "rechazo",
+      "case": "tsp-501-centrales",
+      "mode": "tsp",
+      "size": null,
+      "payloadBytes": 2475,
+      "wallSeconds": 0.0011,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "TSP limits: 1..500 selected, exact_limit 1..18, max_passes 0..1000"
+    },
+    {
+      "group": "rechazo",
+      "case": "tsp-exact-limit-19",
+      "mode": "tsp",
+      "size": null,
+      "payloadBytes": 103,
+      "wallSeconds": 0.0009,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "TSP limits: 1..500 selected, exact_limit 1..18, max_passes 0..1000"
+    },
+    {
+      "group": "rechazo",
+      "case": "tsp-desconectado",
+      "mode": "tsp",
+      "size": null,
+      "payloadBytes": 115,
+      "wallSeconds": 0.0009,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Selected TSP nodes are disconnected"
+    },
+    {
+      "group": "rechazo",
+      "case": "flujo-capacidad-negativa",
+      "mode": "max_flow",
+      "size": null,
+      "payloadBytes": 143,
+      "wallSeconds": 0.001,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Invalid edge endpoints/weight (self-loops excluded, |weight|<=1e12)"
+    },
+    {
+      "group": "rechazo",
+      "case": "voronoi-1001-sitios",
+      "mode": "voronoi",
+      "size": null,
+      "payloadBytes": 9983,
+      "wallSeconds": 0.0012,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Invalid Voronoi domain or size (1..1000 sites, <=100000 queries)"
+    },
+    {
+      "group": "rechazo",
+      "case": "voronoi-100001-consultas",
+      "mode": "voronoi",
+      "size": null,
+      "payloadBytes": 800111,
+      "wallSeconds": 0.031,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Invalid Voronoi domain or size (1..1000 sites, <=100000 queries)"
+    },
+    {
+      "group": "rechazo",
+      "case": "voronoi-coordenada-1e8",
+      "mode": "voronoi",
+      "size": null,
+      "payloadBytes": 100,
+      "wallSeconds": 0.0013,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Invalid site coordinate (absolute maximum 1e7)"
+    },
+    {
+      "group": "rechazo",
+      "case": "cadena-2000001",
+      "mode": "palindrome",
+      "size": null,
+      "payloadBytes": 2000079,
+      "wallSeconds": 0.0104,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Hex sequence exceeds 2000000 characters"
+    },
+    {
+      "group": "rechazo",
+      "case": "cadena-minusculas",
+      "mode": "palindrome",
+      "size": null,
+      "payloadBytes": 81,
+      "wallSeconds": 0.0014,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Hex input permits only 0-9, A-F, CR and LF"
+    },
+    {
+      "group": "rechazo",
+      "case": "cadena-espacios",
+      "mode": "palindrome",
+      "size": null,
+      "payloadBytes": 82,
+      "wallSeconds": 0.0009,
+      "algorithmSeconds": 0.0,
+      "peakProcessBytes": null,
+      "error": "Hex input permits only 0-9, A-F, CR and LF"
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-25000-r0",
+      "mode": "mst",
+      "size": 25000,
+      "payloadBytes": 893439,
+      "wallSeconds": 0.0246,
+      "algorithmSeconds": 0.002417,
+      "peakProcessBytes": 17272832
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-25000-r1",
+      "mode": "mst",
+      "size": 25000,
+      "payloadBytes": 893439,
+      "wallSeconds": 0.0233,
+      "algorithmSeconds": 0.002207,
+      "peakProcessBytes": 16949248
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-25000-r2",
+      "mode": "mst",
+      "size": 25000,
+      "payloadBytes": 893439,
+      "wallSeconds": 0.0268,
+      "algorithmSeconds": 0.002101,
+      "peakProcessBytes": 16998400
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-50000-r0",
+      "mode": "mst",
+      "size": 50000,
+      "payloadBytes": 1787737,
+      "wallSeconds": 0.0497,
+      "algorithmSeconds": 0.005014,
+      "peakProcessBytes": 30081024
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-50000-r1",
+      "mode": "mst",
+      "size": 50000,
+      "payloadBytes": 1787737,
+      "wallSeconds": 0.0513,
+      "algorithmSeconds": 0.004622,
+      "peakProcessBytes": 29896704
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-50000-r2",
+      "mode": "mst",
+      "size": 50000,
+      "payloadBytes": 1787737,
+      "wallSeconds": 0.0487,
+      "algorithmSeconds": 0.004587,
+      "peakProcessBytes": 30089216
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-100000-r0",
+      "mode": "mst",
+      "size": 100000,
+      "payloadBytes": 3576995,
+      "wallSeconds": 0.1087,
+      "algorithmSeconds": 0.010856,
+      "peakProcessBytes": 55730176
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-100000-r1",
+      "mode": "mst",
+      "size": 100000,
+      "payloadBytes": 3576995,
+      "wallSeconds": 0.0963,
+      "algorithmSeconds": 0.010543,
+      "peakProcessBytes": 55726080
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-100000-r2",
+      "mode": "mst",
+      "size": 100000,
+      "payloadBytes": 3576995,
+      "wallSeconds": 0.1022,
+      "algorithmSeconds": 0.010032,
+      "peakProcessBytes": 55730176
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-200000-r0",
+      "mode": "mst",
+      "size": 200000,
+      "payloadBytes": 7155658,
+      "wallSeconds": 0.194,
+      "algorithmSeconds": 0.023129,
+      "peakProcessBytes": 106811392
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-200000-r1",
+      "mode": "mst",
+      "size": 200000,
+      "payloadBytes": 7155658,
+      "wallSeconds": 0.2017,
+      "algorithmSeconds": 0.027488,
+      "peakProcessBytes": 106745856
+    },
+    {
+      "group": "escalabilidad",
+      "case": "mst-200000-r2",
+      "mode": "mst",
+      "size": 200000,
+      "payloadBytes": 7155658,
+      "wallSeconds": 0.2343,
+      "algorithmSeconds": 0.025276,
+      "peakProcessBytes": 106999808
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-25000-r0",
+      "mode": "max_flow",
+      "size": 25000,
+      "payloadBytes": 993685,
+      "wallSeconds": 0.0736,
+      "algorithmSeconds": 0.00385,
+      "peakProcessBytes": 40378368
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-25000-r1",
+      "mode": "max_flow",
+      "size": 25000,
+      "payloadBytes": 993685,
+      "wallSeconds": 0.0741,
+      "algorithmSeconds": 0.003788,
+      "peakProcessBytes": 40624128
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-25000-r2",
+      "mode": "max_flow",
+      "size": 25000,
+      "payloadBytes": 993685,
+      "wallSeconds": 0.069,
+      "algorithmSeconds": 0.003477,
+      "peakProcessBytes": 40378368
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-50000-r0",
+      "mode": "max_flow",
+      "size": 50000,
+      "payloadBytes": 1988084,
+      "wallSeconds": 0.1227,
+      "algorithmSeconds": 0.007223,
+      "peakProcessBytes": 76427264
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-50000-r1",
+      "mode": "max_flow",
+      "size": 50000,
+      "payloadBytes": 1988084,
+      "wallSeconds": 0.1103,
+      "algorithmSeconds": 0.005187,
+      "peakProcessBytes": 76460032
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-50000-r2",
+      "mode": "max_flow",
+      "size": 50000,
+      "payloadBytes": 1988084,
+      "wallSeconds": 0.1178,
+      "algorithmSeconds": 0.005756,
+      "peakProcessBytes": 76460032
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-100000-r0",
+      "mode": "max_flow",
+      "size": 100000,
+      "payloadBytes": 3977441,
+      "wallSeconds": 0.228,
+      "algorithmSeconds": 0.012121,
+      "peakProcessBytes": 148594688
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-100000-r1",
+      "mode": "max_flow",
+      "size": 100000,
+      "payloadBytes": 3977441,
+      "wallSeconds": 0.253,
+      "algorithmSeconds": 0.011594,
+      "peakProcessBytes": 148594688
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-100000-r2",
+      "mode": "max_flow",
+      "size": 100000,
+      "payloadBytes": 3977441,
+      "wallSeconds": 0.2791,
+      "algorithmSeconds": 0.014294,
+      "peakProcessBytes": 148594688
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-200000-r0",
+      "mode": "max_flow",
+      "size": 200000,
+      "payloadBytes": 7956584,
+      "wallSeconds": 0.5757,
+      "algorithmSeconds": 0.026647,
+      "peakProcessBytes": 292044800
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-200000-r1",
+      "mode": "max_flow",
+      "size": 200000,
+      "payloadBytes": 7956584,
+      "wallSeconds": 0.5596,
+      "algorithmSeconds": 0.028838,
+      "peakProcessBytes": 291946496
+    },
+    {
+      "group": "escalabilidad",
+      "case": "max_flow-200000-r2",
+      "mode": "max_flow",
+      "size": 200000,
+      "payloadBytes": 7956584,
+      "wallSeconds": 0.4424,
+      "algorithmSeconds": 0.01708,
+      "peakProcessBytes": 292294656
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-62-r0",
+      "mode": "tsp",
+      "size": 62,
+      "payloadBytes": 794942,
+      "wallSeconds": 0.05,
+      "algorithmSeconds": 0.034294,
+      "peakProcessBytes": 16764928
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-62-r1",
+      "mode": "tsp",
+      "size": 62,
+      "payloadBytes": 794942,
+      "wallSeconds": 0.0494,
+      "algorithmSeconds": 0.034383,
+      "peakProcessBytes": 16777216
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-62-r2",
+      "mode": "tsp",
+      "size": 62,
+      "payloadBytes": 794942,
+      "wallSeconds": 0.0494,
+      "algorithmSeconds": 0.034492,
+      "peakProcessBytes": 16957440
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-125-r0",
+      "mode": "tsp",
+      "size": 125,
+      "payloadBytes": 795219,
+      "wallSeconds": 0.0898,
+      "algorithmSeconds": 0.073158,
+      "peakProcessBytes": 18948096
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-125-r1",
+      "mode": "tsp",
+      "size": 125,
+      "payloadBytes": 795219,
+      "wallSeconds": 0.0939,
+      "algorithmSeconds": 0.074372,
+      "peakProcessBytes": 18948096
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-125-r2",
+      "mode": "tsp",
+      "size": 125,
+      "payloadBytes": 795219,
+      "wallSeconds": 0.101,
+      "algorithmSeconds": 0.080723,
+      "peakProcessBytes": 18886656
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-250-r0",
+      "mode": "tsp",
+      "size": 250,
+      "payloadBytes": 795844,
+      "wallSeconds": 0.1775,
+      "algorithmSeconds": 0.152938,
+      "peakProcessBytes": 23166976
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-250-r1",
+      "mode": "tsp",
+      "size": 250,
+      "payloadBytes": 795844,
+      "wallSeconds": 0.1696,
+      "algorithmSeconds": 0.149475,
+      "peakProcessBytes": 23162880
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-250-r2",
+      "mode": "tsp",
+      "size": 250,
+      "payloadBytes": 795844,
+      "wallSeconds": 0.1795,
+      "algorithmSeconds": 0.156859,
+      "peakProcessBytes": 23162880
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-500-r0",
+      "mode": "tsp",
+      "size": 500,
+      "payloadBytes": 797094,
+      "wallSeconds": 0.3429,
+      "algorithmSeconds": 0.319895,
+      "peakProcessBytes": 31019008
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-500-r1",
+      "mode": "tsp",
+      "size": 500,
+      "payloadBytes": 797094,
+      "wallSeconds": 0.3584,
+      "algorithmSeconds": 0.337239,
+      "peakProcessBytes": 31199232
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_heuristico-500-r2",
+      "mode": "tsp",
+      "size": 500,
+      "payloadBytes": 797094,
+      "wallSeconds": 0.3637,
+      "algorithmSeconds": 0.33965,
+      "peakProcessBytes": 31215616
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-12-r0",
+      "mode": "tsp",
+      "size": 12,
+      "payloadBytes": 794743,
+      "wallSeconds": 0.0291,
+      "algorithmSeconds": 0.008548,
+      "peakProcessBytes": 15679488
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-12-r1",
+      "mode": "tsp",
+      "size": 12,
+      "payloadBytes": 794743,
+      "wallSeconds": 0.0288,
+      "algorithmSeconds": 0.008891,
+      "peakProcessBytes": 15425536
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-12-r2",
+      "mode": "tsp",
+      "size": 12,
+      "payloadBytes": 794743,
+      "wallSeconds": 0.0298,
+      "algorithmSeconds": 0.008777,
+      "peakProcessBytes": 15486976
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-14-r0",
+      "mode": "tsp",
+      "size": 14,
+      "payloadBytes": 794751,
+      "wallSeconds": 0.0275,
+      "algorithmSeconds": 0.01249,
+      "peakProcessBytes": 16781312
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-14-r1",
+      "mode": "tsp",
+      "size": 14,
+      "payloadBytes": 794751,
+      "wallSeconds": 0.0269,
+      "algorithmSeconds": 0.011904,
+      "peakProcessBytes": 16703488
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-14-r2",
+      "mode": "tsp",
+      "size": 14,
+      "payloadBytes": 794751,
+      "wallSeconds": 0.0279,
+      "algorithmSeconds": 0.012728,
+      "peakProcessBytes": 16703488
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-16-r0",
+      "mode": "tsp",
+      "size": 16,
+      "payloadBytes": 794759,
+      "wallSeconds": 0.0433,
+      "algorithmSeconds": 0.027158,
+      "peakProcessBytes": 21815296
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-16-r1",
+      "mode": "tsp",
+      "size": 16,
+      "payloadBytes": 794759,
+      "wallSeconds": 0.042,
+      "algorithmSeconds": 0.02628,
+      "peakProcessBytes": 21716992
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-16-r2",
+      "mode": "tsp",
+      "size": 16,
+      "payloadBytes": 794759,
+      "wallSeconds": 0.0419,
+      "algorithmSeconds": 0.025727,
+      "peakProcessBytes": 21614592
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-18-r0",
+      "mode": "tsp",
+      "size": 18,
+      "payloadBytes": 794767,
+      "wallSeconds": 0.104,
+      "algorithmSeconds": 0.088452,
+      "peakProcessBytes": 43827200
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-18-r1",
+      "mode": "tsp",
+      "size": 18,
+      "payloadBytes": 794767,
+      "wallSeconds": 0.1071,
+      "algorithmSeconds": 0.091351,
+      "peakProcessBytes": 43909120
+    },
+    {
+      "group": "escalabilidad",
+      "case": "tsp_held_karp-18-r2",
+      "mode": "tsp",
+      "size": 18,
+      "payloadBytes": 794767,
+      "wallSeconds": 0.1008,
+      "algorithmSeconds": 0.085478,
+      "peakProcessBytes": 43827200
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-125-r0",
+      "mode": "voronoi",
+      "size": 125,
+      "payloadBytes": 5135,
+      "wallSeconds": 0.0031,
+      "algorithmSeconds": 0.001082,
+      "peakProcessBytes": 4788224
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-125-r1",
+      "mode": "voronoi",
+      "size": 125,
+      "payloadBytes": 5135,
+      "wallSeconds": 0.003,
+      "algorithmSeconds": 0.001064,
+      "peakProcessBytes": 4915200
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-125-r2",
+      "mode": "voronoi",
+      "size": 125,
+      "payloadBytes": 5135,
+      "wallSeconds": 0.0029,
+      "algorithmSeconds": 0.001096,
+      "peakProcessBytes": 4722688
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-250-r0",
+      "mode": "voronoi",
+      "size": 250,
+      "payloadBytes": 10192,
+      "wallSeconds": 0.007,
+      "algorithmSeconds": 0.004307,
+      "peakProcessBytes": 5398528
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-250-r1",
+      "mode": "voronoi",
+      "size": 250,
+      "payloadBytes": 10192,
+      "wallSeconds": 0.007,
+      "algorithmSeconds": 0.004289,
+      "peakProcessBytes": 5406720
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-250-r2",
+      "mode": "voronoi",
+      "size": 250,
+      "payloadBytes": 10192,
+      "wallSeconds": 0.0069,
+      "algorithmSeconds": 0.004239,
+      "peakProcessBytes": 5398528
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-500-r0",
+      "mode": "voronoi",
+      "size": 500,
+      "payloadBytes": 20274,
+      "wallSeconds": 0.0212,
+      "algorithmSeconds": 0.01659,
+      "peakProcessBytes": 6238208
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-500-r1",
+      "mode": "voronoi",
+      "size": 500,
+      "payloadBytes": 20274,
+      "wallSeconds": 0.0219,
+      "algorithmSeconds": 0.016902,
+      "peakProcessBytes": 6356992
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-500-r2",
+      "mode": "voronoi",
+      "size": 500,
+      "payloadBytes": 20274,
+      "wallSeconds": 0.0216,
+      "algorithmSeconds": 0.016607,
+      "peakProcessBytes": 6361088
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-1000-r0",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 40401,
+      "wallSeconds": 0.077,
+      "algorithmSeconds": 0.06853,
+      "peakProcessBytes": 8245248
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-1000-r1",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 40401,
+      "wallSeconds": 0.0772,
+      "algorithmSeconds": 0.068777,
+      "peakProcessBytes": 8101888
+    },
+    {
+      "group": "escalabilidad",
+      "case": "voronoi-1000-r2",
+      "mode": "voronoi",
+      "size": 1000,
+      "payloadBytes": 40401,
+      "wallSeconds": 0.0799,
+      "algorithmSeconds": 0.069952,
+      "peakProcessBytes": 8118272
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-250000-r0",
+      "mode": "matching",
+      "size": 250000,
+      "payloadBytes": 500261,
+      "wallSeconds": 0.0075,
+      "algorithmSeconds": 0.001477,
+      "peakProcessBytes": 5718016
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-250000-r1",
+      "mode": "matching",
+      "size": 250000,
+      "payloadBytes": 500261,
+      "wallSeconds": 0.0071,
+      "algorithmSeconds": 0.001445,
+      "peakProcessBytes": 5853184
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-250000-r2",
+      "mode": "matching",
+      "size": 250000,
+      "payloadBytes": 500261,
+      "wallSeconds": 0.0072,
+      "algorithmSeconds": 0.001468,
+      "peakProcessBytes": 5844992
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-500000-r0",
+      "mode": "matching",
+      "size": 500000,
+      "payloadBytes": 1000261,
+      "wallSeconds": 0.0127,
+      "algorithmSeconds": 0.00294,
+      "peakProcessBytes": 7200768
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-500000-r1",
+      "mode": "matching",
+      "size": 500000,
+      "payloadBytes": 1000261,
+      "wallSeconds": 0.0132,
+      "algorithmSeconds": 0.00306,
+      "peakProcessBytes": 7340032
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-500000-r2",
+      "mode": "matching",
+      "size": 500000,
+      "payloadBytes": 1000261,
+      "wallSeconds": 0.0136,
+      "algorithmSeconds": 0.003241,
+      "peakProcessBytes": 7340032
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-1000000-r0",
+      "mode": "matching",
+      "size": 1000000,
+      "payloadBytes": 2000261,
+      "wallSeconds": 0.0234,
+      "algorithmSeconds": 0.005876,
+      "peakProcessBytes": 10338304
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-1000000-r1",
+      "mode": "matching",
+      "size": 1000000,
+      "payloadBytes": 2000261,
+      "wallSeconds": 0.0235,
+      "algorithmSeconds": 0.00584,
+      "peakProcessBytes": 10342400
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-1000000-r2",
+      "mode": "matching",
+      "size": 1000000,
+      "payloadBytes": 2000261,
+      "wallSeconds": 0.0236,
+      "algorithmSeconds": 0.005916,
+      "peakProcessBytes": 10211328
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-2000000-r0",
+      "mode": "matching",
+      "size": 2000000,
+      "payloadBytes": 4000261,
+      "wallSeconds": 0.0461,
+      "algorithmSeconds": 0.012638,
+      "peakProcessBytes": 16216064
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-2000000-r1",
+      "mode": "matching",
+      "size": 2000000,
+      "payloadBytes": 4000261,
+      "wallSeconds": 0.0477,
+      "algorithmSeconds": 0.012544,
+      "peakProcessBytes": 16211968
+    },
+    {
+      "group": "escalabilidad",
+      "case": "matching-2000000-r2",
+      "mode": "matching",
+      "size": 2000000,
+      "payloadBytes": 4000261,
+      "wallSeconds": 0.0473,
+      "algorithmSeconds": 0.012483,
+      "peakProcessBytes": 16207872
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-250000-r0",
+      "mode": "palindrome",
+      "size": 250000,
+      "payloadBytes": 500263,
+      "wallSeconds": 0.0106,
+      "algorithmSeconds": 0.004466,
+      "peakProcessBytes": 7815168
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-250000-r1",
+      "mode": "palindrome",
+      "size": 250000,
+      "payloadBytes": 500263,
+      "wallSeconds": 0.0099,
+      "algorithmSeconds": 0.00418,
+      "peakProcessBytes": 7618560
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-250000-r2",
+      "mode": "palindrome",
+      "size": 250000,
+      "payloadBytes": 500263,
+      "wallSeconds": 0.0103,
+      "algorithmSeconds": 0.004402,
+      "peakProcessBytes": 7680000
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-500000-r0",
+      "mode": "palindrome",
+      "size": 500000,
+      "payloadBytes": 1000263,
+      "wallSeconds": 0.0189,
+      "algorithmSeconds": 0.008649,
+      "peakProcessBytes": 11161600
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-500000-r1",
+      "mode": "palindrome",
+      "size": 500000,
+      "payloadBytes": 1000263,
+      "wallSeconds": 0.0181,
+      "algorithmSeconds": 0.008198,
+      "peakProcessBytes": 11165696
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-500000-r2",
+      "mode": "palindrome",
+      "size": 500000,
+      "payloadBytes": 1000263,
+      "wallSeconds": 0.0192,
+      "algorithmSeconds": 0.008493,
+      "peakProcessBytes": 11210752
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-1000000-r0",
+      "mode": "palindrome",
+      "size": 1000000,
+      "payloadBytes": 2000263,
+      "wallSeconds": 0.0345,
+      "algorithmSeconds": 0.017455,
+      "peakProcessBytes": 18255872
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-1000000-r1",
+      "mode": "palindrome",
+      "size": 1000000,
+      "payloadBytes": 2000263,
+      "wallSeconds": 0.0363,
+      "algorithmSeconds": 0.017559,
+      "peakProcessBytes": 18329600
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-1000000-r2",
+      "mode": "palindrome",
+      "size": 1000000,
+      "payloadBytes": 2000263,
+      "wallSeconds": 0.0347,
+      "algorithmSeconds": 0.017253,
+      "peakProcessBytes": 17997824
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-2000000-r0",
+      "mode": "palindrome",
+      "size": 2000000,
+      "payloadBytes": 4000263,
+      "wallSeconds": 0.0693,
+      "algorithmSeconds": 0.037086,
+      "peakProcessBytes": 32247808
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-2000000-r1",
+      "mode": "palindrome",
+      "size": 2000000,
+      "payloadBytes": 4000263,
+      "wallSeconds": 0.0694,
+      "algorithmSeconds": 0.03684,
+      "peakProcessBytes": 32153600
+    },
+    {
+      "group": "escalabilidad",
+      "case": "palindrome-2000000-r2",
+      "mode": "palindrome",
+      "size": 2000000,
+      "payloadBytes": 4000263,
+      "wallSeconds": 0.0687,
+      "algorithmSeconds": 0.035626,
+      "peakProcessBytes": 32194560
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-250000-r0",
+      "mode": "common_substring",
+      "size": 250000,
+      "payloadBytes": 500269,
+      "wallSeconds": 0.0939,
+      "algorithmSeconds": 0.088366,
+      "peakProcessBytes": 33632256
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-250000-r1",
+      "mode": "common_substring",
+      "size": 250000,
+      "payloadBytes": 500269,
+      "wallSeconds": 0.1048,
+      "algorithmSeconds": 0.099368,
+      "peakProcessBytes": 33681408
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-250000-r2",
+      "mode": "common_substring",
+      "size": 250000,
+      "payloadBytes": 500269,
+      "wallSeconds": 0.1101,
+      "algorithmSeconds": 0.103881,
+      "peakProcessBytes": 33632256
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-500000-r0",
+      "mode": "common_substring",
+      "size": 500000,
+      "payloadBytes": 1000269,
+      "wallSeconds": 0.2708,
+      "algorithmSeconds": 0.259995,
+      "peakProcessBytes": 61939712
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-500000-r1",
+      "mode": "common_substring",
+      "size": 500000,
+      "payloadBytes": 1000269,
+      "wallSeconds": 0.2637,
+      "algorithmSeconds": 0.254059,
+      "peakProcessBytes": 61939712
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-500000-r2",
+      "mode": "common_substring",
+      "size": 500000,
+      "payloadBytes": 1000269,
+      "wallSeconds": 0.2507,
+      "algorithmSeconds": 0.240856,
+      "peakProcessBytes": 61943808
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-1000000-r0",
+      "mode": "common_substring",
+      "size": 1000000,
+      "payloadBytes": 2000269,
+      "wallSeconds": 0.4179,
+      "algorithmSeconds": 0.401436,
+      "peakProcessBytes": 121753600
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-1000000-r1",
+      "mode": "common_substring",
+      "size": 1000000,
+      "payloadBytes": 2000269,
+      "wallSeconds": 0.3517,
+      "algorithmSeconds": 0.335456,
+      "peakProcessBytes": 121937920
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-1000000-r2",
+      "mode": "common_substring",
+      "size": 1000000,
+      "payloadBytes": 2000269,
+      "wallSeconds": 0.3853,
+      "algorithmSeconds": 0.370923,
+      "peakProcessBytes": 121937920
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-2000000-r0",
+      "mode": "common_substring",
+      "size": 2000000,
+      "payloadBytes": 4000269,
+      "wallSeconds": 1.4893,
+      "algorithmSeconds": 1.456472,
+      "peakProcessBytes": 244834304
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-2000000-r1",
+      "mode": "common_substring",
+      "size": 2000000,
+      "payloadBytes": 4000269,
+      "wallSeconds": 1.3574,
+      "algorithmSeconds": 1.3254,
+      "peakProcessBytes": 244879360
+    },
+    {
+      "group": "escalabilidad",
+      "case": "common_substring-2000000-r2",
+      "mode": "common_substring",
+      "size": 2000000,
+      "payloadBytes": 4000269,
+      "wallSeconds": 1.47,
+      "algorithmSeconds": 1.438245,
+      "peakProcessBytes": 244883456
     }
   ]
 }

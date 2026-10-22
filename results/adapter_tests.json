@@ -3,9 +3,9 @@
   "tests": 14,
   "failures": 0,
   "errors": 0,
-  "elapsedSeconds": 0.026415184000029512,
+  "elapsedSeconds": 0.02336031999993793,
   "executable": "sentinela",
-  "executableSha256": "83895779a6a8c91d6fc5266e292419a27610bcc9ba0c06d09ac5a053c6ba0d8a",
+  "executableSha256": "1a20e3f1ca939882b4bb2df297f1d1400d27ecaffe4d064e32d08b9d573d762a",
   "adapterSha256": "06609a61ac2bd5c098e3773a6614041efddc9e20dfa81e0c44af28d35a5d09d3",
   "coverage": [
     "eight real engine modes",
