@@ -14,7 +14,7 @@ El cálculo se realiza en **C++17**. Un adaptador en **Python** permite consumir
 | Ejemplos y prueba sencilla desde Python | Disponibles |
 | Preparación de datos GÉANT | Implementada, con supuestos documentados |
 | Integración con el autograder web | **100 puntos obtenidos**, según la corrida confirmada por el equipo |
-| Pantallas y visualizaciones de Streamlit | Primera versión implementada |
+| Pantallas y visualizaciones de Streamlit | Gemelo digital con 4 módulos (ver docs/PENDIENTES.md) |
 | Instalador y distribución de la app | Pendientes |
 
 La interfaz está implementada en `app/streamlit_app.py`: ejecuta los siete algoritmos, presenta resultados, diagramas, tablas y métricas, y permite descargar cada ejecución en JSON. También puedes utilizar Python o la terminal.

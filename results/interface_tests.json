@@ -1,167 +1,34 @@
 {
   "success": true,
-  "method": "Streamlit AppTest with real C++ engine",
-  "views": [
+  "tests": 7,
+  "failures": 0,
+  "errors": 0,
+  "method": "Streamlit AppTest con el motor C++ real",
+  "pages": [
     {
-      "view": "Conexiones de menor costo · MST",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.006 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "73.185 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.51 MiB"
-        },
-        {
-          "label": "Costo total del escenario",
-          "value": "16,246.00"
-        }
-      ]
+      "page": "Misión",
+      "metrics": 4,
+      "charts": 1
     },
     {
-      "view": "Ruta de mantenimiento · TSP",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.114 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "54.875 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.53 MiB"
-        },
-        {
-          "label": "Distancia del recorrido",
-          "value": "29,760.15 km"
-        }
-      ]
+      "page": "Network Explorer",
+      "metrics": 4,
+      "charts": 1
     },
     {
-      "view": "Capacidad de transporte · Flujo máximo",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.021 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "45.869 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.54 MiB"
-        },
-        {
-          "label": "Flujo máximo del escenario",
-          "value": "160,000.00 Mbit/s"
-        }
-      ]
+      "page": "Algorithm Laboratory",
+      "metrics": 21,
+      "charts": 7
     },
     {
-      "view": "Regiones de proximidad · Voronoi",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.279 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "62.302 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.58 MiB"
-        },
-        {
-          "label": "Regiones calculadas",
-          "value": "22"
-        }
-      ]
+      "page": "Cybersecurity Console",
+      "metrics": 7,
+      "charts": 1
     },
     {
-      "view": "Firmas y transmisiones",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.008 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "790.702 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.50 MiB"
-        },
-        {
-          "label": "Longitud de la subcadena común",
-          "value": "6"
-        }
-      ]
-    },
-    {
-      "view": "Búsqueda de firmas · KMP",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.003 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "131.102 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.48 MiB"
-        }
-      ]
-    },
-    {
-      "view": "Palíndromos · Manacher",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.003 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "56.029 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.48 MiB"
-        }
-      ]
-    },
-    {
-      "view": "Subcadena común",
-      "metrics": [
-        {
-          "label": "Tiempo del algoritmo C++",
-          "value": "0.005 ms"
-        },
-        {
-          "label": "Tiempo total de la llamada",
-          "value": "72.096 ms"
-        },
-        {
-          "label": "Pico de memoria del proceso",
-          "value": "4.46 MiB"
-        },
-        {
-          "label": "Longitud de la subcadena común",
-          "value": "6"
-        }
-      ]
+      "page": "Scenario Manager",
+      "metrics": 0,
+      "charts": 0
     }
-  ],
-  "invalidSourceSinkHandled": true
+  ]
 }

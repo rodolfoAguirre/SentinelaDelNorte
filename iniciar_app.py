@@ -2,6 +2,7 @@
 # Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
 # Modificacion: 2026-10-22
 
+import os
 from pathlib import Path
 import socket
 import sys
@@ -12,6 +13,7 @@ import sys
 # Retorno: codigo de salida de Streamlit
 def main():
 	projectRoot = Path(__file__).resolve().parent
+	os.chdir(projectRoot)
 	localDependencies = projectRoot / ".venv-deps"
 	if localDependencies.is_dir():
 		sys.path.insert(0, str(localDependencies))
