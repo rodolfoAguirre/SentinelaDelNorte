@@ -1,6 +1,6 @@
 # Descripcion: configura la compilacion del motor
 # Autores: Rodolfo Aguirre Revilla, Leandro Lizama Leirana, Andres Maiztegui Martinez | Matriculas: A00839754, A00840242, A01833484
-# Modificacion: 2026-10-21
+# Modificacion: 2026-10-22
 
 cmake_minimum_required(VERSION 3.16)
 project(SentinelaDelNorte LANGUAGES CXX)
@@ -31,6 +31,8 @@ find_package(Python3 COMPONENTS Interpreter QUIET)
 if(Python3_FOUND)
 	add_test(NAME engine COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_engine.py $<TARGET_FILE:sentinela>)
 	add_test(NAME autograder COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_autograder.py $<TARGET_FILE:sentinela>)
+	add_test(NAME stress COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/stress_algorithms.py $<TARGET_FILE:sentinela> --quick)
+	add_test(NAME stress_autograder COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/stress_autograder.py $<TARGET_FILE:sentinela> --profiles huge --seeds 1114129554 --output ${CMAKE_BINARY_DIR}/stress_autograder.json)
 	if(Python3_VERSION VERSION_GREATER_EQUAL "3.10")
 		add_test(NAME adapter COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/test_adapter.py $<TARGET_FILE:sentinela>)
 	endif()

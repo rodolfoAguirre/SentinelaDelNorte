@@ -1,3 +1,23 @@
 Integrante 1: Rodolfo Aguirre Revilla | Matricula: A00839754
+Contribuciones:
+- Motor C++ con los siete algoritmos: Kruskal, Held-Karp y 2-opt, Dinic, Voronoi por semiplanos, KMP, Manacher y automata de sufijos
+- Codec JSON propio, contrato provisional-v1 y modo de texto
+- Adaptador del contrato web del autograder y empaquetado del ZIP
+- Adaptador Python (app/adapter.py) y prueba rapida de los siete algoritmos
+- Preparacion de datos GEANT, ejemplos y escenarios sinteticos
+- Suites de pruebas del motor, del adaptador y del contrato web; benchmarks
+- Primera version de la interfaz Streamlit y lanzador iniciar_app.py
+- Documentacion: README, contrato, algoritmos, autograder, estandar y guia de presentacion
+
 Integrante 2: Leandro Lizama Leirana | Matricula: A00840242
+Contribuciones:
+- Revision de codigo: encabezados con autores y matriculas, estilo en protocol.h y json.h
+- Pruebas portables entre Windows y Linux; eliminacion de rutas personales en los resultados
+- Correccion de la medicion de memoria pico en Linux (VmHWM en lugar de ru_maxrss heredado)
+- Replica nativa del autograder web con perfiles lite, normal y huge (tests/stress_autograder.py)
+- Pruebas de estres hasta los limites del contrato con certificados de correctitud, casos adversariales, rechazos y analisis de escalabilidad (tests/stress_algorithms.py)
+- Registro de las suites de estres en CTest y documentacion en docs/STRESS.md
+
 Integrante 3: Andrés Maiztegui Martínez | Matricula: A01833484
+Contribuciones:
+- Pendientes de registrar

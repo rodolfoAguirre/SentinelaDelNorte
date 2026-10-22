@@ -301,11 +301,12 @@ python tests/test_engine.py build/sentinela.exe
 python tests/test_adapter.py build/sentinela.exe
 python tests/test_autograder.py
 python tests/stress_algorithms.py
+python tests/stress_autograder.py
 ```
 
-La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `stress_algorithms.py` genera casos aleatorios reproducibles en tres escalas para los siete algoritmos y guarda sus mediciones en `results/stress_tests.json`. Todas las suites buscan `build/sentinela.exe` en Windows y `build/sentinela` en Linux o macOS; también aceptan la ruta del ejecutable como primer argumento.
+La primera es la comprobación rápida. Las suites restantes contrastan los algoritmos con referencias independientes, verifican la integración Python y cubren diferencias específicas del contrato web. `stress_algorithms.py` lleva los siete algoritmos hasta los límites del contrato (2 000 nodos, 200 000 enlaces, 2 000 000 de caracteres), verifica cada resultado con un certificado independiente, prueba casos adversariales y rechazos, y mide la escalabilidad frente a la complejidad teórica. `stress_autograder.py` replica los casos funcionales y de estrés del autograder web en sus perfiles `lite`, `normal` y `huge`. La metodología, los resultados y las limitaciones están en [STRESS.md](docs/STRESS.md). Todas las suites buscan `build/sentinela.exe` en Windows y `build/sentinela` en Linux o macOS; también aceptan la ruta del ejecutable como primer argumento.
 
-CMake registra las suites del motor y del adaptador si encuentra una versión adecuada de Python:
+CMake registra las suites del motor, del adaptador, del contrato web y de estrés (en modo rápido) si encuentra una versión adecuada de Python:
 
 ```powershell
 ctest --test-dir build --output-on-failure
@@ -398,6 +399,7 @@ Para preparar la exposición y practicar preguntas técnicas, consulta la [guía
 | [Integración Python y Streamlit](app/README.md) | Para construir la interfaz y consumir el backend |
 | [Contrato de la app](docs/CONTRACT.md) | Para conocer campos, límites, índices y respuestas exactas |
 | [Algoritmos y decisiones](docs/ALGORITHMS.md) | Para estudiar correctitud, complejidad y limitaciones |
+| [Pruebas de estrés](docs/STRESS.md) | Para revisar casos límite, escalabilidad, memoria y limitaciones medidas |
 | [Datos y supuestos](data/README.md) | Para entender la procedencia de los escenarios |
 | [Autograder](docs/AUTOGRADER.md) | Para generar y ejecutar el paquete de evaluación |
 | [Pruebas y mediciones](results/README.md) | Para interpretar la evidencia y los benchmarks |

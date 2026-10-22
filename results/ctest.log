@@ -1,7 +1,15 @@
 Test project build
     Start 1: engine
-1/1 Test #1: engine ...........................   Passed   56.38 sec
+1/5 Test #1: engine ...........................   Passed    1.30 sec
+    Start 2: autograder
+2/5 Test #2: autograder .......................   Passed    0.15 sec
+    Start 3: stress
+3/5 Test #3: stress ...........................   Passed    8.32 sec
+    Start 4: stress_autograder
+4/5 Test #4: stress_autograder ................   Passed    4.76 sec
+    Start 5: adapter
+5/5 Test #5: adapter ..........................   Passed    0.10 sec
 
-100% tests passed, 0 tests failed out of 1
+100% tests passed, 0 tests failed out of 5
 
-Total Test time (real) =  56.40 sec
+Total Test time (real) =  14.63 sec

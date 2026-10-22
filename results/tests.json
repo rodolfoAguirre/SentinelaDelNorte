@@ -4,7 +4,7 @@
   "engine_calls": 846,
   "failures": 0,
   "errors": 0,
-  "elapsed_seconds": 1.0468961889999946,
+  "elapsed_seconds": 1.2287158999999974,
   "seeds": [
     2038,
     2039,
@@ -13,7 +13,7 @@
     2042
   ],
   "executable": "sentinela",
-  "executable_sha256": "83895779a6a8c91d6fc5266e292419a27610bcc9ba0c06d09ac5a053c6ba0d8a",
+  "executable_sha256": "1a20e3f1ca939882b4bb2df297f1d1400d27ecaffe4d064e32d08b9d573d762a",
   "references": [
     "naive string enumeration",
     "Prim",
