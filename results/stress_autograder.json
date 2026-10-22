@@ -1,0 +1,2270 @@
+{
+  "graderVersion": "1.1.0-web",
+  "target": "native replay of site generators and validators",
+  "executable": "sentinela",
+  "profiles": [
+    "lite",
+    "normal",
+    "huge"
+  ],
+  "seeds": [
+    1114129554,
+    2038,
+    42
+  ],
+  "cases": 225,
+  "failures": 0,
+  "success": true,
+  "records": [
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0017
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0019
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0046,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0021,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0023,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0027,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0024,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0028,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "lite",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0033,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0017
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0023
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0037,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0022,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0024,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0026,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0032,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 2038,
+      "profile": "lite",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0027,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0022
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0034,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0018,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.002,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0026,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 42,
+      "profile": "lite",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025,
+      "timeoutSeconds": 6
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0019
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0088,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0029,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0042,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0051,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0076,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0138,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0017
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0026
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0018
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0018
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0112,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0039,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0042,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0057,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0053,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0074,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 2038,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0125,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0017
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0026
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0023
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0114,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0044,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.004,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0053,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0046,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0063,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 42,
+      "profile": "normal",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0077,
+      "timeoutSeconds": 8
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.002
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0007
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0008
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0342,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0308,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0121,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0232,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0162,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0257,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 1114129554,
+      "profile": "huge",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0912,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0009
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0017
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.002
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0019
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0015
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0021
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0342,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0244,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0087,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0217,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.016,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0245,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 2038,
+      "profile": "huge",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.072,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0014
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0023
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0013
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0025
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0019
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0011
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": false,
+      "case": 2,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0016
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 0,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.001
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "common",
+      "stress": false,
+      "case": 1,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0012
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "mst",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0443,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "tsp",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0304,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "flow",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0109,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "voronoi",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0223,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "matching",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0158,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "palindrome",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0267,
+      "timeoutSeconds": 18
+    },
+    {
+      "seed": 42,
+      "profile": "huge",
+      "mode": "common",
+      "stress": true,
+      "pass": true,
+      "reason": "ok",
+      "seconds": 0.0736,
+      "timeoutSeconds": 18
+    }
+  ]
+}
