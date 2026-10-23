@@ -342,9 +342,17 @@ Inicia la interfaz desde la raíz con:
 
 También puedes ejecutar `python iniciar_app.py` con el Python donde instalaste las dependencias. El lanzador localiza la app respecto al proyecto y admite la carpeta local de dependencias `.venv-deps` si está disponible.
 
+El lanzador da prioridad al entorno `.venv` del proyecto cuando se ejecuta desde el Python global. La carpeta alternativa `.venv-deps` solo se usa si sus extensiones NumPy coinciden con la versión y plataforma del intérprete. Si aparece un error con `cp312` y Python 3.15, se están mezclando dependencias de Python 3.12 con otro intérprete: utiliza `.venv/Scripts/python.exe iniciar_app.py` en Windows. No copies carpetas de dependencias entre versiones de Python; instálalas de nuevo dentro del entorno de cada equipo.
+
 El lanzador muestra la dirección exacta, normalmente `http://127.0.0.1:8501`, y usa el siguiente puerto disponible hasta 8510 si está ocupado. Abre esa dirección y conserva la terminal abierta. Desactiva explícitamente el modo de desarrollo de Streamlit para evitar enlaces al puerto 3000 sin un servidor de interfaz.
 
 La interfaz conserva resultados entre interacciones, captura `EngineError` y distingue TSP exacto de heurístico. Presenta tiempo del algoritmo C++, tiempo total de la llamada y pico de memoria del proceso, con unidades y alcance de cada medición. La distribución en otras computadoras sigue pendiente.
+
+El mapa geográfico permite zoom, desplazamiento, consulta de centrales al seleccionarlas y encuadres de Europa, Norteamérica o toda la red. Resalta los enlaces del resultado, permite explorar TSP por pasos y dibuja las regiones de Voronoi transformadas desde la proyección del escenario. Las líneas unen centrales; no representan trazados de fibra. El fondo CARTO requiere internet. La pestaña **Diagrama del escenario** conserva una vista sin fondo cartográfico.
+
+Los controles del mapa solo modifican la visualización; el motor se ejecuta al pulsar **Ejecutar análisis**. Para verificar la representación usa `python tests/test_maps.py`. Los fragmentos de transmisiones muestran coincidencias resaltadas con contexto y una vista previa limitada.
+
+Al ejecutar, la presentación del resultado comienza automáticamente: conexiones de MST en su orden de selección, tramos físicos de TSP en orden del recorrido, enlaces con flujo y regiones de Voronoi. Los controles permiten pausar, reiniciar, retroceder, avanzar o ver todo. La animación dura aproximadamente 0.7 segundos por paso y está separada de las métricas de cálculo. Para flujo y Voronoi se revela el resultado final, sin simular los pasos internos del motor. Las tablas muestran ubicaciones e identificadores de centrales, nombres comprensibles y unidades; el JSON técnico permanece disponible en el detalle descargable.
 
 ## Problemas frecuentes
 

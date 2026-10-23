@@ -4,7 +4,9 @@
 
 from pathlib import Path
 import socket
+import subprocess
 import sys
+import sysconfig
 
 
 # Localiza dependencias e inicia el servidor de la app
@@ -12,13 +14,24 @@ import sys
 # Retorno: codigo de salida de Streamlit
 def main():
 	projectRoot = Path(__file__).resolve().parent
+	venvPython = projectRoot / ".venv" / ("Scripts/python.exe" if sys.platform == "win32" else "bin/python")
+	if venvPython.is_file() and sys.prefix == sys.base_prefix:
+		print("Usando el entorno Python del proyecto (.venv)", flush=True)
+		return subprocess.call([str(venvPython), str(Path(__file__).resolve())])
 	localDependencies = projectRoot / ".venv-deps"
-	if localDependencies.is_dir():
+	extensionSuffix = sysconfig.get_config_var("EXT_SUFFIX")
+	numpyCore = localDependencies / "numpy/_core"
+	compatible = extensionSuffix and any(path.name.endswith(extensionSuffix) for path in numpyCore.glob("_multiarray_umath*"))
+	if localDependencies.is_dir() and compatible and sys.prefix == sys.base_prefix:
 		sys.path.insert(0, str(localDependencies))
 	try:
+		import numpy
+		import pandas
+		import pydeck
 		from streamlit.web import cli
-	except ImportError:
-		print("Instala las dependencias con: python -m pip install -r app/requirements.txt")
+	except ImportError as error:
+		print(f"No se pudieron cargar las dependencias de Python {sys.version_info.major}.{sys.version_info.minor}: {error}")
+		print(f'Instala las dependencias para este interprete: "{sys.executable}" -m pip install -r "{projectRoot / "app/requirements.txt"}"')
 		return 1
 	port = 8501
 	available = False

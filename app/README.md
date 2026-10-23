@@ -2,6 +2,8 @@
 
 La primera interfaz está implementada en `app/streamlit_app.py` y consume el motor C++ mediante `app/adapter.py`. Incluye los siete algoritmos y un análisis conjunto de cadenas, resultados, diagramas, tablas, tiempo C++, tiempo total, memoria y descarga JSON. Instala `app/requirements.txt` y ejecuta `python -m streamlit run app/streamlit_app.py` desde la raíz.
 
+La visualización geográfica usa Pydeck (`app/visuals.py`) con fondo CARTO, coordenadas originales de nodos y transformación inversa de la proyección para las celdas. Admite selección de centrales, detalles al pasar el cursor, zoom y recorrido TSP por pasos. El diagrama SVG sigue disponible en otra pestaña. El fondo de mapa requiere internet; los cálculos se mantienen en el motor local. El tema oscuro está en `.streamlit/config.toml` y los estilos comunes en `applyTheme`.
+
 ```text
 Widgets de Streamlit
         |

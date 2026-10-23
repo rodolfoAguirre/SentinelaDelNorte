@@ -7,15 +7,15 @@
       "metrics": [
         {
           "label": "Tiempo del algoritmo C++",
-          "value": "0.006 ms"
+          "value": "0.013 ms"
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "73.185 ms"
+          "value": "95.955 ms"
         },
         {
           "label": "Pico de memoria del proceso",
-          "value": "4.51 MiB"
+          "value": "4.50 MiB"
         },
         {
           "label": "Costo total del escenario",
@@ -28,15 +28,15 @@
       "metrics": [
         {
           "label": "Tiempo del algoritmo C++",
-          "value": "0.114 ms"
+          "value": "0.174 ms"
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "54.875 ms"
+          "value": "90.148 ms"
         },
         {
           "label": "Pico de memoria del proceso",
-          "value": "4.53 MiB"
+          "value": "4.54 MiB"
         },
         {
           "label": "Distancia del recorrido",
@@ -53,7 +53,7 @@
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "45.869 ms"
+          "value": "42.601 ms"
         },
         {
           "label": "Pico de memoria del proceso",
@@ -70,11 +70,11 @@
       "metrics": [
         {
           "label": "Tiempo del algoritmo C++",
-          "value": "0.279 ms"
+          "value": "0.164 ms"
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "62.302 ms"
+          "value": "76.933 ms"
         },
         {
           "label": "Pico de memoria del proceso",
@@ -95,7 +95,7 @@
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "790.702 ms"
+          "value": "68.431 ms"
         },
         {
           "label": "Pico de memoria del proceso",
@@ -116,7 +116,7 @@
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "131.102 ms"
+          "value": "54.335 ms"
         },
         {
           "label": "Pico de memoria del proceso",
@@ -133,11 +133,11 @@
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "56.029 ms"
+          "value": "65.659 ms"
         },
         {
           "label": "Pico de memoria del proceso",
-          "value": "4.48 MiB"
+          "value": "4.47 MiB"
         }
       ]
     },
@@ -146,15 +146,15 @@
       "metrics": [
         {
           "label": "Tiempo del algoritmo C++",
-          "value": "0.005 ms"
+          "value": "0.006 ms"
         },
         {
           "label": "Tiempo total de la llamada",
-          "value": "72.096 ms"
+          "value": "66.881 ms"
         },
         {
           "label": "Pico de memoria del proceso",
-          "value": "4.46 MiB"
+          "value": "4.47 MiB"
         },
         {
           "label": "Longitud de la subcadena común",
