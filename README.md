@@ -404,6 +404,7 @@ Para preparar la exposición y practicar preguntas técnicas, consulta la [guía
 
 | Documento | Cuándo consultarlo |
 |---|---|
+| [App e interfaz de usuario](docs/APP_UI.md) | Para usar las pantallas, mapas, animación, tablas y métricas, o continuar su desarrollo |
 | [Integración Python y Streamlit](app/README.md) | Para construir la interfaz y consumir el backend |
 | [Contrato de la app](docs/CONTRACT.md) | Para conocer campos, límites, índices y respuestas exactas |
 | [Algoritmos y decisiones](docs/ALGORITHMS.md) | Para estudiar correctitud, complejidad y limitaciones |
