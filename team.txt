@@ -20,4 +20,9 @@ Contribuciones:
 
 Integrante 3: Andrés Maiztegui Martínez | Matricula: A01833484
 Contribuciones:
-- Pendientes de registrar
+- Revision de la interfaz de usuario: organizacion visual, legibilidad y claridad de los controles
+- Revision funcional de la app: navegacion y coherencia del flujo de uso
+- Revision de la presentacion de resultados: titulos de tablas y significado de sus columnas
+- Revision de las metricas de ejecucion: unidades y explicaciones de tiempo y memoria
+- Revision de la interaccion con el mapa: encuadres, etiquetas y consulta de centrales
+- Revision de los controles de animacion: reproduccion, pausa y avance por pasos
